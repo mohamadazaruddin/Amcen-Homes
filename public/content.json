@@ -1,0 +1,58 @@
+{
+  "servicesList": [
+    {
+      "name": "Open Space design",
+      "id": 1,
+      "image": "/images/aboutus.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    },
+    {
+      "name": "Modular Kitchen",
+      "id": 2,
+      "image": "/images/aboutus.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    },
+    {
+      "name": "Residential Building",
+      "id": 3,
+      "image": "/images/aboutus.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    },
+    {
+      "name": "Home Remodelling",
+      "id": 4,
+      "image": "/images/aboutus.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    },
+    {
+      "name": "Front Elevation Designs",
+      "id": 5,
+      "image": "/images/aboutus.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    },
+    {
+      "name": "Interior Designing",
+      "id": 6,
+      "image": "/images/aboutus.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    },
+    {
+      "name": "Home Renovation",
+      "id": 7,
+      "image": "/images/aboutus.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    },
+    {
+      "name": "Warehouses Construction",
+      "id": 8,
+      "image": "/images/aboutus.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    },
+    {
+      "name": "Commercial Construction",
+      "id": 9,
+      "image": "/images/commercial.png",
+      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+    }
+  ]
+}
