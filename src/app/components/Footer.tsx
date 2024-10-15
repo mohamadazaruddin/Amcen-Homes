@@ -99,7 +99,7 @@ export default function Footer() {
               color="#ede8e8"
               fontSize="sm"
               fontFamily="'Roboto', sans-serif"
-              fontWeight="medium"
+              fontWeight="normal"
             >
               +91 98745 63210
             </Text>
@@ -120,7 +120,7 @@ export default function Footer() {
               color="#ede8e8"
               fontSize="sm"
               fontFamily="'Roboto', sans-serif"
-              fontWeight="medium"
+              fontWeight="normal"
             >
               amcenhome@gmail.com
             </Text>
@@ -143,7 +143,7 @@ export default function Footer() {
               fontSize="sm"
               display="inline-block"
               fontFamily="'Roboto', sans-serif"
-              fontWeight="medium"
+              fontWeight="normal"
             >
               Amcen Homes, Near Blue dart Warehouse, by-pass thana, Tent city
               road, Patna, Bihar, 800009
