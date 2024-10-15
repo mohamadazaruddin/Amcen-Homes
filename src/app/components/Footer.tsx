@@ -16,8 +16,8 @@ export default function Footer() {
     mb: 1,
   };
   return (
-    <Box bg="#252531">
-      <Flex px="10" justify="space-between" py="10">
+    <Box bg="#000000">
+      <Flex px="10" gap="10" justify="space-between" py="10">
         <Box w="25%">
           <AppLogo
             logoHeight={24}
@@ -32,11 +32,11 @@ export default function Footer() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
             deleniti modi, rerum id maiores,
           </Text>
-          <Flex mt="4" color="#fff !important" gap="4">
-            <FacebookIcon w="6" h="6" />
-            <InstaIcon w="6" h="6" />
-            <TwitterIcon w="6" h="6" />
-            <WhatsappOutlineIcon w="6" h="6" />
+          <Flex mt="6" color="#fff !important" gap="4">
+            <FacebookIcon w="6" h="6" cursor="pointer" />
+            <InstaIcon w="6" h="6" cursor="pointer" />
+            <TwitterIcon w="6" h="6" cursor="pointer" />
+            <WhatsappOutlineIcon w="6" h="6" cursor="pointer" />
           </Flex>
         </Box>
         <Flex w="50%" justify="space-around">
@@ -98,7 +98,7 @@ export default function Footer() {
             <Text
               color="#ede8e8"
               fontSize="sm"
-              fontFamily="normal"
+              fontFamily="'Roboto', sans-serif"
               fontWeight="medium"
             >
               +91 98745 63210
@@ -119,7 +119,7 @@ export default function Footer() {
             <Text
               color="#ede8e8"
               fontSize="sm"
-              fontFamily="normal"
+              fontFamily="'Roboto', sans-serif"
               fontWeight="medium"
             >
               amcenhome@gmail.com
@@ -142,7 +142,7 @@ export default function Footer() {
               color="#ede8e8"
               fontSize="sm"
               display="inline-block"
-              fontFamily="normal"
+              fontFamily="'Roboto', sans-serif"
               fontWeight="medium"
             >
               Amcen Homes, Near Blue dart Warehouse, by-pass thana, Tent city

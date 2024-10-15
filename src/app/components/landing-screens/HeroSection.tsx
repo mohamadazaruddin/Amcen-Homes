@@ -68,8 +68,11 @@ export default function HeroSection() {
         <Image
           src="/images/banner.png"
           alt="banner Image"
-          width={600}
-          height={400}
+          width={700}
+          style={{
+            mixBlendMode: "darken",
+          }}
+          height={500}
         />
       </Flex>
     </Box>

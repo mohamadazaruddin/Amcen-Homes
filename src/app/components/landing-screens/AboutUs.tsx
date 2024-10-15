@@ -60,6 +60,8 @@ export default function AboutUs() {
           w="50%"
           backgroundRepeat="no-repeat"
           backgroundPosition="center"
+          borderTopLeftRadius="300px"
+          borderBottomLeftRadius="300px"
           backgroundSize="cover"
           backgroundImage="url('/images/aboutus.png')"
           h="auto"

@@ -54,5 +54,207 @@
       "image": "/images/commercial.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     }
+  ],
+  "faqs": [
+    {
+      "question": "What safety measures are in place at the construction site?",
+      "answer": "We implement strict safety protocols, including personal protective equipment (PPE), regular safety training, and site inspections."
+    },
+    {
+      "question": "What are the working hours for the construction site?",
+      "answer": "Typically, working hours are Monday to Friday, 7 AM to 5 PM, but this may vary based on the project."
+    },
+    {
+      "question": "How can I contact the site manager?",
+      "answer": "You can contact the site manager via the provided contact information posted at the site entrance."
+    },
+    {
+      "question": "Are there any specific entry requirements for visitors?",
+      "answer": "Yes, all visitors must sign in, wear appropriate PPE, and be escorted by a site representative."
+    },
+    {
+      "question": "What types of construction projects are being undertaken?",
+      "answer": "We are currently working on residential, commercial, and infrastructure projects. Please check our project updates for details."
+    },
+    {
+      "question": "How do you handle noise and dust control?",
+      "answer": "We use noise barriers, regular dust suppression techniques, and adhere to local regulations to minimize disturbances."
+    },
+    {
+      "question": "What are the environmental considerations for the construction site?",
+      "answer": "We follow all environmental regulations, conduct impact assessments, and implement measures to reduce our ecological footprint."
+    },
+    {
+      "question": "How can I report a safety concern?",
+      "answer": "Please report any safety concerns immediately to a site supervisor or use the safety hotline posted on-site."
+    },
+    {
+      "question": "Is the construction site accessible for individuals with disabilities?",
+      "answer": "We strive to make our site accessible and provide accommodations as needed. Please contact us for specific arrangements."
+    },
+    {
+      "question": "What is the estimated timeline for project completion?",
+      "answer": "The timeline varies by project. Please refer to our project schedule for specific completion dates."
+    },
+    {
+      "question": "Will there be any disruptions to local traffic?",
+      "answer": "We work closely with local authorities to manage traffic disruptions and provide updates as necessary."
+    },
+    {
+      "question": "What materials are being used in the construction?",
+      "answer": "We use high-quality materials that meet industry standards, including sustainable options wherever possible."
+    },
+    {
+      "question": "Are there job opportunities available on the construction site?",
+      "answer": "Yes, we regularly post job openings on our website and local job boards. Check frequently for updates."
+    },
+    {
+      "question": "How do you ensure quality control on the construction site?",
+      "answer": "We have a dedicated quality assurance team that conducts regular inspections and ensures compliance with standards."
+    },
+    {
+      "question": "What is your policy on subcontractors?",
+      "answer": "We carefully vet all subcontractors to ensure they meet our quality and safety standards before onboarding them."
+    },
+    {
+      "question": "How can I stay updated on the progress of the construction project?",
+      "answer": "We provide regular updates through our website, newsletters, and community meetings."
+    },
+    {
+      "question": "What are the emergency procedures in place?",
+      "answer": "Emergency procedures are outlined in our safety plan and include evacuation routes and contact information for emergency services."
+    },
+    {
+      "question": "How do you handle waste management on-site?",
+      "answer": "We have a waste management plan that includes recycling, proper disposal, and reducing waste generation."
+    },
+    {
+      "question": "What happens if there is bad weather?",
+      "answer": "In case of inclement weather, work may be delayed, and safety protocols will be reassessed to ensure site safety."
+    },
+    {
+      "question": "Who can I speak to about community concerns?",
+      "answer": "Our community liaison officer is available to address any concerns. Their contact information is posted on-site."
+    }
+  ],
+  "gallery": [
+    { "image": "/images/gallery/bathroom.png", "title": "Bathroom Design" },
+    { "image": "/images/gallery/cieling.png", "title": "False Cieling" },
+    {
+      "image": "/images/gallery/commercial_interiors.png",
+      "title": "Commercial Interiors"
+    },
+    { "image": "/images/gallery/kitchen.png", "title": "Modukar Kitehen" },
+    { "image": "/images/gallery/terrace.png", "title": "Terrace Design" },
+    {
+      "image": "/images/gallery/residential_interiors.png",
+      "title": "Residential Interiors"
+    },
+    { "image": "/images/gallery/showroom.png", "title": "Showroom Design" },
+    { "image": "/images/gallery/shop.png", "title": "Shop Interiors" },
+    { "image": "/images/gallery/wardrobe.png", "title": "Wardrobe Design" },
+    { "image": "/images/gallery/office.png", "title": "Office Space" }
+  ],
+  "blogs": [
+    {
+      "image": "/images/gallery/bathroom.png",
+      "added_date": "2024-10-01",
+      "user": {
+        "name": "John Doe",
+        "profile_image": "/images/gallery/bathroom.png"
+      },
+      "title": "The Future of Sustainable Construction",
+      "content": "Sustainable construction is no longer a buzzword. It has become the need of the hour. With rising environmental concerns, builders are now opting for eco-friendly materials and energy-efficient designs With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/cieling.png",
+      "added_date": "2024-10-02",
+      "user": {
+        "name": "Emily Smith",
+        "profile_image": "https://example.com/images/user2.jpg"
+      },
+      "title": "Top 10 Home Renovation Ideas",
+      "content": "Home renovation can be both exciting and challenging. Whether you are looking to add a modern touch or preserve a vintage charm, here are the top 10 ideas that can transform your space With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/kitchen.png",
+      "added_date": "2024-10-03",
+      "user": {
+        "name": "Michael Brown",
+        "profile_image": "https://example.com/images/user3.jpg"
+      },
+      "title": "Building Smart Homes: A Beginner's Guide",
+      "content": "Smart homes are redefining the way we live. From voice-activated controls to smart lighting, this guide will walk you through the basics of building a home that’s both smart and sustainable With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/residential_interiors.png",
+      "added_date": "2024-10-04",
+      "user": {
+        "name": "Sophia Taylor",
+        "profile_image": "https://example.com/images/user4.jpg"
+      },
+      "title": "Understanding Construction Trends in 2024",
+      "content": "2024 has brought about new trends in the construction industry. From 3D-printed buildings to modular homes, let's explore the trends that are shaping the future of construction With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/showroom.png",
+      "added_date": "2024-10-05",
+      "user": {
+        "name": "David Lee",
+        "profile_image": "https://example.com/images/user5.jpg"
+      },
+      "title": "How to Choose the Right Contractor",
+      "content": "Choosing the right contractor is crucial for any construction project. This blog highlights key factors you should consider, including experience, references, and communication skills With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/shop.png",
+      "added_date": "2024-10-06",
+      "user": {
+        "name": "Emma Wilson",
+        "profile_image": "https://example.com/images/user6.jpg"
+      },
+      "title": "Eco-Friendly Building Materials You Should Know",
+      "content": "With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/wardrobe.png",
+      "added_date": "2024-10-07",
+      "user": {
+        "name": "Oliver Harris",
+        "profile_image": "https://example.com/images/user7.jpg"
+      },
+      "title": "Renovation on a Budget: Tips and Tricks",
+      "content": "Renovating your home doesn't have to break the bank. Here are some creative ways to give your space a new look without spending a fortune With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/bathroom.png",
+      "added_date": "2024-10-08",
+      "user": {
+        "name": "Ava Martinez",
+        "profile_image": "https://example.com/images/user8.jpg"
+      },
+      "title": "The Role of Technology in Modern Construction",
+      "content": "Technology is playing a pivotal role in modern construction. From drones to AI-based planning tools, this blog explores how technology is transforming the way we build With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/bathroom.png",
+      "added_date": "2024-10-09",
+      "user": {
+        "name": "Lucas Clark",
+        "profile_image": "https://example.com/images/user9.jpg"
+      },
+      "title": "Interior Design Trends for the Upcoming Year",
+      "content": "Interior design is all about creating spaces that feel both comfortable and stylish. Discover the upcoming trends in colors, furniture, and layouts that are set to dominate next year With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    },
+    {
+      "image": "/images/gallery/bathroom.png",
+      "added_date": "2024-10-10",
+      "user": {
+        "name": "Mia Walker",
+        "profile_image": "https://example.com/images/user10.jpg"
+      },
+      "title": "The Importance of Safety in Construction Sites",
+      "content": "Safety should always be a top priority in any construction project. In this blog, we discuss the key safety practices and regulations that ensure the well-being of workers on-site With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    }
   ]
 }
