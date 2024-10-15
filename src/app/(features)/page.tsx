@@ -13,14 +13,16 @@ import NewLook from "../components/landing-screens/NewLook";
 import HowItWorks from "../components/landing-screens/HowItWorks";
 import Reviews from "../components/landing-screens/Reviews";
 import ContactUs from "../components/landing-screens/ContactUs";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   const isScrolled = useScrollPosition();
   return (
     <div>
-      <Header name={`Amcen homes`} />
       <HeroSection />
-      <AboutUs />
+      <div id="about-us">
+        <AboutUs />
+      </div>
       <Services servicesList={servicesList} />
       <WhyChoose />
       <PriceViewing />
