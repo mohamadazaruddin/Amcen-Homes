@@ -27,9 +27,10 @@ export default function OurPortfolio() {
           Our Portfolio
         </Text>
       </Box>
-      <Flex h="500px" maxW="1200px" mx="auto" mt={"5"} gap="2">
+      <Flex h="500px" mx="20" mt={"5"} gap="2">
         {portfolioImages.map(({ img, label }, i) => (
           <Box
+            key={i}
             w={i == viewIndex ? "50%" : "12%"}
             sx={bgStyles}
             backgroundImage={`url('${img}')`}

@@ -344,5 +344,67 @@
         }
       ]
     }
+  ],
+  "reviewsData": [
+    {
+      "name": "John Doe",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "Amazing service! The team was very professional and transformed my living room exactly as I imagined Amazing service! The team was very professional and transformed my living room exactly as I imaginedAmazing service! The team was very professional and transformed my living room exactly as I imagined.",
+      "position": "Homeowner"
+    },
+    {
+      "name": "Jane Smith",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "Great experience with the renovation project. The quality of work and attention to detail were impressive.",
+      "position": "Interior Designer"
+    },
+    {
+      "name": "Michael Johnson",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "The team was punctual, professional, and provided valuable insights during the project. Highly recommended!",
+      "position": "Architect"
+    },
+    {
+      "name": "Emily Davis",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "Excellent work! My office space looks stunning, and the project was completed ahead of schedule.",
+      "position": "Business Owner"
+    },
+    {
+      "name": "David Lee",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "The craftsmanship and design exceeded our expectations. The team truly brought our vision to life.",
+      "position": "Homeowner"
+    },
+    {
+      "name": "Sophia Patel",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "Professional, creative, and easy to work with. I am very happy with the new design of my boutique.",
+      "position": "Boutique Owner"
+    },
+    {
+      "name": "James Brown",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "They understood my needs and delivered a design that was both functional and stylish. Great job!",
+      "position": "Property Manager"
+    },
+    {
+      "name": "Laura Wilson",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "They did a fantastic job with my kitchen renovation. It now feels more spacious and modern.",
+      "position": "Chef"
+    },
+    {
+      "name": "Kevin Martinez",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "The entire process was smooth and stress-free. They kept me updated throughout the project.",
+      "position": "Real Estate Agent"
+    },
+    {
+      "name": "Ava Thompson",
+      "profilePic": "https://via.placeholder.com/150",
+      "review": "Top-notch service! The attention to detail and creativity made my dream home a reality.",
+      "position": "Homeowner"
+    }
   ]
 }

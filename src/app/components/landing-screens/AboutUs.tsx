@@ -8,7 +8,7 @@ export default function AboutUs() {
     <Box py="100px">
       <Flex pl="16">
         <Box w="50%" pr="16" pb="5">
-          <Text fontSize="lg" fontWeight="normal" color="#494848">
+          <Text fontSize="lg" fontWeight="normal" color="primary.500">
             About us
           </Text>
           <Text

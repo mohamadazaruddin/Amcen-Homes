@@ -100,27 +100,12 @@ a {
   background: #555;
 }
 
-
-
-
-.slick-slide img {  
-    height: 300px; /* example height */  
-    object-fit: cover; /* maintain aspect ratio */  
-}
 .swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  height: 100%;
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 500px !important;
-  height: 500px;
-}
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
+
+
+

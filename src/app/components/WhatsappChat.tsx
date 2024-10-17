@@ -53,6 +53,8 @@ const WhatsAppChat = ({ isOpen, setIsOpen }: any) => {
             bg="#0A5F54"
             px="4"
             py="2"
+            align="center"
+            gap="2"
             borderTopLeftRadius="md"
             borderTopRightRadius="md"
           >
