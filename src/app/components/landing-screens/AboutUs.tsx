@@ -63,7 +63,7 @@ export default function AboutUs() {
           borderTopLeftRadius="300px"
           borderBottomLeftRadius="300px"
           backgroundSize="cover"
-          backgroundImage="url('/images/aboutus.png')"
+          backgroundImage="url('/images/works/image5.png')"
           h="auto"
         ></Box>
       </Flex>

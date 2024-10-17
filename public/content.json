@@ -3,55 +3,50 @@
     {
       "name": "Open Space design",
       "id": 1,
-      "image": "/images/aboutus.png",
+      "image": "/images/gallery/open_space.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     },
     {
       "name": "Modular Kitchen",
       "id": 2,
-      "image": "/images/aboutus.png",
+      "image": "/images/gallery/kitchen.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     },
     {
       "name": "Residential Building",
       "id": 3,
-      "image": "/images/aboutus.png",
+      "image": "/images/gallery/residential_interiors.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     },
-    {
-      "name": "Home Remodelling",
-      "id": 4,
-      "image": "/images/aboutus.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
-    },
+
     {
       "name": "Front Elevation Designs",
       "id": 5,
-      "image": "/images/aboutus.png",
+      "image": "/images/gallery/front_elevation.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     },
     {
       "name": "Interior Designing",
       "id": 6,
-      "image": "/images/aboutus.png",
+      "image": "/images/gallery/interiors.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     },
     {
       "name": "Home Renovation",
-      "id": 7,
-      "image": "/images/aboutus.png",
+      "id": 4,
+      "image": "/images/gallery/home_renovation.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     },
     {
       "name": "Warehouses Construction",
       "id": 8,
-      "image": "/images/aboutus.png",
+      "image": "/images/gallery/warehouse.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     },
     {
       "name": "Commercial Construction",
       "id": 9,
-      "image": "/images/commercial.png",
+      "image": "/images/gallery/commercial_interiors.png",
       "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
     }
   ],
@@ -255,6 +250,99 @@
       },
       "title": "The Importance of Safety in Construction Sites",
       "content": "Safety should always be a top priority in any construction project. In this blog, we discuss the key safety practices and regulations that ensure the well-being of workers on-site With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint With the rise of sustainable living, using eco-friendly building materials is more important than ever. Here are some of the best options available that can reduce your carbon footprint"
+    }
+  ],
+  "features": [
+    {
+      "type": "residential_interiors",
+      "name": "Residential Interiors",
+      "image": "/images/gallery/residental-bg.png",
+      "subItems": [
+        {
+          "name": "Modular Kitchen",
+          "type": "modular_kitchen",
+          "image": "/images/gallery/kitchen.png",
+          "content": "Transform your cooking space with our innovative modular kitchen designs that blend functionality and aesthetics.",
+          "action": "Learn More"
+        },
+        {
+          "name": "Bathroom Designing",
+          "type": "bathroom_designing",
+          "image": "/images/gallery/bathroom.png",
+          "content": "Create a serene and stylish bathroom space with our expert bathroom designing services.",
+          "action": "Learn More"
+        },
+        {
+          "name": "Wardrobe Designing",
+          "type": "wardrobe_designing",
+          "image": "/images/gallery/wardrobe.png",
+          "content": "Customize your storage solutions with beautifully crafted wardrobe designs to fit any space.",
+          "action": "Learn More"
+        },
+        {
+          "name": "Terrace Designs",
+          "type": "terrace_designs",
+          "image": "/images/gallery/terrace.png",
+          "content": "Design a stunning terrace that offers relaxation and style, perfect for outdoor gatherings.",
+          "action": "Learn More"
+        },
+        {
+          "name": "False Ceiling Designs",
+          "type": "False_ceiling_designs",
+          "image": "/images/gallery/cieling.png",
+          "content": "Enhance your interiors with modern false ceiling designs that add elegance and character to your space.",
+          "action": "Learn More"
+        },
+        {
+          "name": "Tiles Fitting",
+          "type": "tiles_fitting",
+          "image": "/images/gallery/tiles_fitting.png",
+          "content": "Expert tiles fitting services to ensure a flawless finish for floors, walls, and more.",
+          "action": "Learn More"
+        },
+        {
+          "name": "Painting",
+          "type": "painting",
+          "image": "/images/gallery/painting.png",
+          "content": "Professional painting services to refresh and elevate the look of your home interiors and exteriors.",
+          "action": "Learn More"
+        },
+        {
+          "name": "Home Renovation",
+          "type": "home_renovation",
+          "image": "/images/gallery/home_renovation.png",
+          "content": "Comprehensive home renovation services to transform your space with expert craftsmanship and design.",
+          "action": "Learn More"
+        }
+      ]
+    },
+    {
+      "type": "commercial_interiors",
+      "name": "Commercial Interiors",
+      "image": "/images/gallery/commercial_bg.png",
+      "subItems": [
+        {
+          "name": "Office Space Designing",
+          "type": "office_space_designing",
+          "image": "/images/gallery/office.png",
+          "content": "Create productive and aesthetically pleasing office spaces with our specialized office space designing services.",
+          "action": "Learn More"
+        },
+        {
+          "name": "Shop Interior Designing",
+          "type": "shop_interior_designing",
+          "image": "/images/gallery/shop.png",
+          "content": "Design engaging retail environments that attract customers and enhance the shopping experience with our shop interior designing.",
+          "action": "Learn More"
+        },
+        {
+          "name": "Showroom Designing",
+          "type": "showroom_designing",
+          "image": "/images/gallery/showroom.png",
+          "content": "Showcase your products in style with our showroom designing services that focus on functionality and visual appeal.",
+          "action": "Learn More"
+        }
+      ]
     }
   ]
 }

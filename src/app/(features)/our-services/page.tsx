@@ -31,7 +31,7 @@ export default function OurServices() {
           </Text>
           <Text color="#fff" fontSize="md" fontWeight="normal">
             Give your home a new look with these interior <br /> design ideas
-            curated for you 
+            curated for you
           </Text>
         </Box>
       </Box>
@@ -43,6 +43,8 @@ export default function OurServices() {
             lg: "repeat(3, 1fr)",
           }}
           gap="5"
+          maxW={"1200px"}
+          mx="auto"
           mt="-50px"
         >
           <ServiceCard
@@ -56,7 +58,7 @@ export default function OurServices() {
                 rounded="full"
                 px="5"
                 rightIcon={<ArrowForwardIcon w="5" />}
-                onClick={() => push("/our-services/azar")}
+                onClick={() => push("/estimate")}
                 _hover={{
                   background: "secondary.500",
                   color: "contrast.200",
@@ -74,7 +76,7 @@ export default function OurServices() {
               <Button
                 rightIcon={<ArrowForwardIcon w="5" />}
                 background="secondary.600"
-                onClick={() => push("/our-services/azar")}
+                onClick={() => push("/our-services/residential_interiors")}
                 color="contrast.200"
                 rounded="full"
                 px="5"
@@ -95,7 +97,7 @@ export default function OurServices() {
               <Button
                 rightIcon={<ArrowForwardIcon w="5" />}
                 background="secondary.600"
-                onClick={() => push("/our-services/sunn")}
+                onClick={() => push("/our-services/commercial_interiors")}
                 color="contrast.200"
                 rounded="full"
                 px="5"

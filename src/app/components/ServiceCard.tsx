@@ -11,7 +11,7 @@ import React from "react";
 
 export default function ServiceCard({ image, title, content, action }: any) {
   return (
-    <Box rounded="lg" shadow="lg" bg="#F5F5F5" h="full">
+    <Box rounded="lg" shadow="lg" bg="#fff" h="full">
       <Flex flexDirection="column" h="full" justifyContent="space-between">
         <Box>
           <Image
@@ -24,8 +24,7 @@ export default function ServiceCard({ image, title, content, action }: any) {
           />
 
           <Box p="5" flex="1">
-            {" "}
-            <Text fontSize="24px" fontWeight="semibold" color="secondary.500">
+            <Text fontSize="20px" fontWeight="semibold" color="secondary.500">
               {title}
             </Text>
             <Text

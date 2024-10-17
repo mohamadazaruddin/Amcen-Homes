@@ -10,7 +10,7 @@ export default function NewLook() {
         backgroundRepeat="no-repeat"
         backgroundPosition="center"
         backgroundSize="cover"
-        backgroundImage="url('/images/aboutus.png')"
+        backgroundImage="url('/images/old_home.png')"
         h="auto"
       ></Box>
       <Box w="50%" py="100px" textAlign="center">
@@ -42,7 +42,7 @@ export default function NewLook() {
         backgroundRepeat="no-repeat"
         backgroundPosition="center"
         backgroundSize="cover"
-        backgroundImage="url('/images/aboutus.png')"
+        backgroundImage="url('/images/new_home.png')"
         h="auto"
       ></Box>
     </Flex>

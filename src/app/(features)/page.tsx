@@ -16,6 +16,9 @@ import ContactUs from "../components/landing-screens/ContactUs";
 import Footer from "../components/Footer";
 
 export default function HomePage() {
+  const apiKey = "YOUR_GOOGLE_MAPS_API_KEY"; // Replace with your actual API key
+  const latitude = 19.076; // Replace with your latitude
+  const longitude = 72.8777; // Replace with your longitude
   const isScrolled = useScrollPosition();
   return (
     <div>
@@ -34,3 +37,4 @@ export default function HomePage() {
     </div>
   );
 }
+//  <Map apiKey={apiKey} latitude={latitude} longitude={longitude} />

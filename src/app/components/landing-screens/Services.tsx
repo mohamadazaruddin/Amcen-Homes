@@ -8,7 +8,7 @@ export default function Services({ servicesList }: any) {
   const [viewService, setViewService] = React.useState(servicesList[0]);
 
   return (
-    <Flex px={10} py="100px" bg={"#f5f5f5"}>
+    <Flex px={10} py="100px" bg={"#EBF3FF"}>
       <Box w="40%">
         <Box
           w="full"

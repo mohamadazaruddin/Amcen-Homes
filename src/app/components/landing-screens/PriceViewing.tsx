@@ -12,10 +12,10 @@ import React from "react";
 
 export default function PriceViewing() {
   const previewImages = [
-    { link: "/images/aboutus.png" },
-    { link: "/images/commercial.png" },
-    { link: "/images/commercial.png" },
-    { link: "/images/commercial.png" },
+    { link: "/images/works/image1.png" },
+    { link: "/images/works/image2.png" },
+    { link: "/images/works/image3.png" },
+    { link: "/images/works/image4.png" },
   ];
   return (
     <Flex py={"60px"} bg="#252531" px={10} align="center">
@@ -65,6 +65,7 @@ export default function PriceViewing() {
                 h="200px"
                 position="absolute"
                 top="50%"
+                objectFit="fill"
                 left="50%"
                 w="200px"
                 maxW="250px"
