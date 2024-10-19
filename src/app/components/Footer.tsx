@@ -7,6 +7,7 @@ import FacebookIcon from "./Icons/FacebookIcon";
 import InstaIcon from "./Icons/InstaIcon";
 import TwitterIcon from "./Icons/TwitterIcon";
 import WhatsappOutlineIcon from "./Icons/WhatsappOutlineIcon";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
   const linkStyle = {
@@ -15,6 +16,7 @@ export default function Footer() {
     color: "#ede8e8",
     mb: 1,
   };
+  const { push } = useRouter();
   return (
     <Box bg="#000000">
       <Flex px="10" gap="10" justify="space-between" py="10">
@@ -61,8 +63,12 @@ export default function Footer() {
             <Text mb="3" fontSize="md" fontWeight="semibold" color="#fff">
               Useful Links
             </Text>
-            <Link sx={linkStyle}>Terms & Conditions</Link>
-            <Link sx={linkStyle}>Privacy Policy</Link>
+            <Link sx={linkStyle} href={"/terms-and-condition"} >
+              Terms & Conditions
+            </Link>
+            <Link sx={linkStyle} href="/privacy-policy" >
+              Privacy Policy
+            </Link>
             <Link sx={linkStyle}>Feedback</Link>
             <Link sx={linkStyle} href="/faqs">
               FAQs
@@ -76,7 +82,9 @@ export default function Footer() {
               Blog
             </Link>
             <Link sx={linkStyle}>Book an Appointment</Link>
-            <Link sx={linkStyle}>Site Map</Link>
+            <Link sx={linkStyle} href="/site-map">
+              Site Map
+            </Link>
           </Box>
         </Flex>
         <Box w="25%" pl="10">
@@ -162,9 +170,15 @@ export default function Footer() {
           gap={5}
           justify="space-between"
         >
-          <Link sx={linkStyle}>Terms & Condition</Link>
-          <Link sx={linkStyle}>Privacy policy</Link>
-          <Link sx={linkStyle}>Site Map</Link>
+          <Link sx={linkStyle} onClick={() => push("/terms-and-condition")}>
+            Terms & Condition
+          </Link>
+          <Link sx={linkStyle} onClick={() => push("/privacy-policy")}>
+            Privacy policy
+          </Link>
+          <Link sx={linkStyle} onClick={() => push("/site-map")}>
+            Site Map
+          </Link>
         </Flex>
       </Flex>
     </Box>

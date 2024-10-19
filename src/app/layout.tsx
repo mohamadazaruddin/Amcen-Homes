@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "./Theme";
+import NextTopLoader from "nextjs-toploader";
 
 export default function RootLayout({
   children,
@@ -36,7 +37,21 @@ export default function RootLayout({
           // fontFamily: "'Roboto', sans-serif",
         }}
       >
-        <ChakraProvider theme={theme}>{children}</ChakraProvider>
+        <ChakraProvider theme={theme}>
+          <NextTopLoader
+            color="#1A1E23"
+            initialPosition={0.08}
+            crawlSpeed={200}
+            height={3}
+            crawl={true}
+            showSpinner={false}
+            easing="ease"
+            speed={200}
+            zIndex={1600}
+            showAtBottom={false}
+          />
+          {children}
+        </ChakraProvider>
       </body>
     </html>
   );

@@ -110,7 +110,7 @@ export default function HowItWorks() {
           />
 
           <StepContent
-            title="Meet our Expert"
+            title="Book With Us"
             description="Good to go ! You pay 2% of the estimated project cost as the booking amount to start the house construction"
             wrapperProps={{ mt: "8" }}
           />
@@ -126,7 +126,7 @@ export default function HowItWorks() {
           <Box>
             <StepNumber step={4} />
             <StepContent
-              title="Meet our Expert"
+              title="Receive designs"
               description="Our architects will provide exhaustive drawings and designs of your home construction till you are completely satisfied."
               wrapperProps={{ mt: "8" }}
             />
@@ -145,7 +145,7 @@ export default function HowItWorks() {
             <StepNumber step={5} />
             <StepContent
               wrapperProps={{ mt: "8" }}
-              title="Meet our Expert"
+              title="Track & Transact"
               description="To ensure absolute trust, Amcen Homes provides an escrow model where you transfer the amount for stage of the project."
             />
           </Box>
@@ -163,7 +163,7 @@ export default function HowItWorks() {
           <Box>
             <StepNumber step={6} />
             <StepContent
-              title="Meet our Expert"
+              title="Settle In"
               description={
                 <>
                   The last and final stage. We make sure you are well settled in

@@ -23,7 +23,13 @@ export default function PriceViewing() {
         <Text fontSize="40px" fontWeight="medium" mt={5} color="contrast.200">
           WE CONSTRUCT YOUR <br /> DREAM HOME
         </Text>
-        <Text fontSize="sm" mt={3.5} fontWeight="normal" color="contrast.200">
+        <Text
+          fontSize="sm"
+          mt={3.5}
+          fontWeight="normal"
+          color="contrast.200"
+          fontFamily="Roboto"
+        >
           Starting with Rs. 1750 per sq ft.
         </Text>
         <Button
@@ -39,6 +45,7 @@ export default function PriceViewing() {
           }}
           py="2.5"
           rightIcon={<ArrowForwardIcon />}
+          fontFamily="Roboto"
         >
           Enquire now
         </Button>

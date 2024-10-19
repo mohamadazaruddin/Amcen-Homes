@@ -14,6 +14,7 @@ import HowItWorks from "../components/landing-screens/HowItWorks";
 import Reviews from "../components/landing-screens/Reviews";
 import ContactUs from "../components/landing-screens/ContactUs";
 import Footer from "../components/Footer";
+import EstimateSection from "../components/landing-screens/EstimateSection";
 
 export default function HomePage() {
   const isScrolled = useScrollPosition();
@@ -24,10 +25,11 @@ export default function HomePage() {
         <AboutUs />
       </div>
       <Services servicesList={servicesList} />
+      <EstimateSection />
+      <NewLook />
       <WhyChoose />
       <PriceViewing />
       <OurPortfolio />
-      <NewLook />
       <HowItWorks />
       <Reviews />
       <ContactUs />

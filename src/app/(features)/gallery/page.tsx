@@ -19,7 +19,7 @@ export default function Gallery() {
     <Box px="10">
       <Heading textAlign="center" color="primary.500" mt="16" fontSize="48px">
         <Box as="span" color="secondary.500">
-          Our
+          Our{" "}
         </Box>
         Gallery
       </Heading>

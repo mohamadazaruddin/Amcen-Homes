@@ -24,7 +24,7 @@ export default function Reviews() {
         <Text fontSize="40px" fontWeight="medium" color="contrast.200">
           What Our Client <br /> Says ?
         </Text>
-        <Flex mt="5" gap="5">
+        <Flex mt="8" gap="5">
           <IconButton
             bg="#ffffff"
             color="secondary.500"

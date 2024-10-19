@@ -11,11 +11,11 @@ export default function OurPortfolio() {
   };
   const viewIndex = 2;
   const portfolioImages = [
+    { img: "/images/works/image1.png", label: "Home Renovation" },
+    { img: "/images/works/image2.png", label: "Home Renovation" },
     { img: "/images/works/image5.png", label: "Home Renovation" },
-    { img: "/images/works/image5.png", label: "Home Renovation" },
-    { img: "/images/works/image5.png", label: "Home Renovation" },
-    { img: "/images/works/image5.png", label: "Home Renovation" },
-    { img: "/images/works/image5.png", label: "Home Renovation" },
+    { img: "/images/works/image4.png", label: "Home Renovation" },
+    { img: "/images/works/image3.png", label: "Home Renovation" },
   ];
   return (
     <Box py="100px" w="full">

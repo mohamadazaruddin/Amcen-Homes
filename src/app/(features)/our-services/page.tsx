@@ -60,7 +60,7 @@ export default function OurServices() {
                 rightIcon={<ArrowForwardIcon w="5" />}
                 onClick={() => push("/estimate")}
                 _hover={{
-                  background: "secondary.500",
+                  background: "secondary.600",
                   color: "contrast.200",
                 }}
               >
