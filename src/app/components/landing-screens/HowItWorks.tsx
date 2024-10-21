@@ -178,6 +178,7 @@ export default function HowItWorks() {
                   color="contrast.200"
                   rounded="full"
                   fontSize="sm"
+                  fontFamily="Roboto"
                   px="5"
                   mt="5"
                   _hover={{

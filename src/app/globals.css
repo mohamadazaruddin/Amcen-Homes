@@ -105,7 +105,9 @@ a {
   height: 100%;
 }
 
-
+.swiper-slide {
+  display: flex;
+}
 
 
 

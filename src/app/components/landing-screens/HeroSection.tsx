@@ -29,6 +29,7 @@ export default function HeroSection() {
               borderColor="secondary.600"
               border="1px solid"
               rounded="full"
+              fontFamily="Roboto"
               px="5"
               py="2.5"
               _hover={{
@@ -42,6 +43,7 @@ export default function HeroSection() {
               background="secondary.600"
               color="contrast.200"
               rounded="full"
+              fontFamily="Roboto"
               fontSize="sm"
               px="5"
               _hover={{

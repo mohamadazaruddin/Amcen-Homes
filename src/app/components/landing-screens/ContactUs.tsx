@@ -134,6 +134,7 @@ export default function ContactUs() {
               rounded="md"
               type="submit"
               w="full"
+              fontFamily="Roboto"
             >
               Submit
             </Button>

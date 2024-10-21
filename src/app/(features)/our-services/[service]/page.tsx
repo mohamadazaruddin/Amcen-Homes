@@ -70,13 +70,16 @@ export default function Service({ params }: { params: { service: string } }) {
                     }}
                     color="contrast.200"
                     rounded="full"
+                    fontSize="md"
+                    fontWeight="normal"
+                    fontFamily="Roboto"
                     px="5"
                     _hover={{
                       background: "secondary.500",
                       color: "contrast.200",
                     }}
                   >
-                    Let Build
+                    Lets Build
                   </Button>
                 }
               />

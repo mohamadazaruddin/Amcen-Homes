@@ -39,7 +39,7 @@ export default function RootLayout({
       >
         <ChakraProvider theme={theme}>
           <NextTopLoader
-            color="#1A1E23"
+            color="#EDAB5B"
             initialPosition={0.08}
             crawlSpeed={200}
             height={3}

@@ -17,7 +17,7 @@ export default function EstimateSection() {
           <Text
             fontSize="48px"
             fontWeight="bold"
-            lineHeight="110%"
+            lineHeight="120%"
             color="contrast.200"
           >
             Ready to build your <br />
@@ -32,6 +32,7 @@ export default function EstimateSection() {
             <Button
               color="secondary.600"
               bg="contrast.200"
+              fontFamily="Roboto"
               rounded="full"
               px="5"
               _hover={{

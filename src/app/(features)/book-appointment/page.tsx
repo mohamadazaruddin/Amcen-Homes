@@ -48,6 +48,7 @@ export default function BookAppointment() {
               background="secondary.600"
               color="contrast.200"
               rounded="full"
+              fontFamily="Roboto"
               px="5"
               _hover={{
                 background: "secondary.500",
@@ -66,6 +67,7 @@ export default function BookAppointment() {
                 background: "#0A5F54",
                 color: "contrast.200",
               }}
+              fontFamily="Roboto"
               rightIcon={<WhatappFilledIcon h="28px" mt="2" w="28px" />}
               onClick={() => {
                 const phoneNumber = "9702914246";

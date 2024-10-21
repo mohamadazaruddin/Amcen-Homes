@@ -84,6 +84,7 @@ export default function Header({ name }: HeaderProps) {
           background: "secondary.500",
           color: "contrast.200",
         }}
+        fontFamily="Roboto"
       >
         Contact Us
       </Button>

@@ -179,6 +179,7 @@ export default function ConsultForm({ isOpen, onClose }: any) {
                       borderColor="secondary.500"
                       onClick={onClose}
                       mr={3}
+                      fontFamily="Roboto"
                     >
                       Cancel
                     </Button>
@@ -188,6 +189,7 @@ export default function ConsultForm({ isOpen, onClose }: any) {
                       _hover={{ bg: "secondary.500", color: "#fff" }}
                       color="#fff"
                       isLoading={isSubmitting}
+                      fontFamily="Roboto"
                     >
                       Submit
                     </Button>

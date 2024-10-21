@@ -96,6 +96,7 @@ const WhatsAppChat = ({ isOpen, setIsOpen }: any) => {
             rounded="md"
             borderTopEndRadius="0"
             borderTopLeftRadius="0"
+            fontFamily="Roboto"
             mt={3}
             onClick={() => {
               window.open(whatsappLink, "_blank");

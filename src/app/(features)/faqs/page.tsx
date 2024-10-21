@@ -27,6 +27,7 @@ export default function FAQs() {
           borderColor="secondary.500"
           color="secondary.200"
           rounded="full"
+          fontFamily="Roboto"
           variant="outline"
           px="5"
           _hover={{

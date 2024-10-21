@@ -4,7 +4,7 @@ import React from "react";
 
 export default function NewLook() {
   return (
-    <Flex bg="#252531">
+    <Flex bg="#282a2c">
       <Box
         w="25%"
         backgroundRepeat="no-repeat"
@@ -26,6 +26,7 @@ export default function NewLook() {
           rounded="full"
           fontSize="sm"
           px="5"
+          fontFamily="Roboto"
           mt="5"
           _hover={{
             background: "contrast.200 ",

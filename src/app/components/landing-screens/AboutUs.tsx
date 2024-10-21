@@ -50,6 +50,7 @@ export default function AboutUs() {
               background: "secondary.500",
               color: "contrast.200",
             }}
+            fontFamily="Roboto"
             py="2.5"
             rightIcon={<ArrowForwardIcon />}
           >

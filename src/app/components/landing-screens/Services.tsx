@@ -65,6 +65,7 @@ export default function Services({ servicesList }: any) {
                 fontWeight="normal"
                 borderColor="secondary.600"
                 border="1px solid"
+                fontFamily="Roboto"
                 rounded="full"
                 px="2.5"
                 py="2"

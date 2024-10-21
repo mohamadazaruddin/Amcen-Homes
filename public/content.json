@@ -406,5 +406,360 @@
       "review": "Top-notch service! The attention to detail and creativity made my dream home a reality.",
       "position": "Homeowner"
     }
+  ],
+
+  "constructionItems": [
+    {
+      "category": "tmt_bars",
+      "name": "TMT Bars",
+      "image": "/images/construction_items/tmt_bars.png",
+      "tag": "Mandatory",
+      "content": "TMT Bars are high-strength reinforcement bars used in construction for building strong and durable structures.",
+      "items": [
+        {
+          "name": "Tata",
+          "image": "tata-tmt.jpg",
+          "content": "Tata TMT Bars are known for their superior strength and corrosion resistance, suitable for various types of construction."
+        },
+        {
+          "name": "Sail",
+          "image": "sail-tmt.jpg",
+          "content": "Sail TMT Bars offer excellent weldability and high tensile strength for reliable structural support."
+        },
+        {
+          "name": "Jindal",
+          "image": "jindal-tmt.jpg",
+          "content": "Jindal TMT Bars are renowned for their high ductility and earthquake resistance, making them ideal for critical construction."
+        },
+        {
+          "name": "Rungta",
+          "image": "rungta-tmt.jpg",
+          "content": "Rungta TMT Bars provide enhanced strength and durability, perfect for large-scale projects."
+        },
+        {
+          "name": "Magadh",
+          "image": "magadh-tmt.jpg",
+          "content": "Magadh TMT Bars are known for their cost-effectiveness and reliable performance in construction."
+        },
+        {
+          "name": "K2",
+          "image": "k2-tmt.jpg",
+          "content": "K2 TMT Bars are designed for superior flexibility and high thermal stability."
+        },
+        {
+          "name": "Vizag steel",
+          "image": "vizag-steel-tmt.jpg",
+          "content": "Vizag Steel TMT Bars are known for their high-quality standards and excellent resistance to environmental conditions."
+        }
+      ]
+    },
+    {
+      "category": "cement",
+      "name": "Cement",
+      "image": "/images/construction_items/cement.png",
+      "tag": "Mandatory",
+      "content": "Cement is a key ingredient in construction, used for binding materials like sand, gravel, and bricks together.",
+      "items": [
+        {
+          "brand": "ACC",
+          "content": "ACC Cement offers a range of quality products suitable for various types of construction projects.",
+          "types": [
+            {
+              "name": "Acc plain",
+              "image": "acc-plain.jpg",
+              "content": "ACC Plain Cement is ideal for basic construction needs like plastering and masonry."
+            },
+            {
+              "name": "Acc premium",
+              "image": "acc-premium.jpg",
+              "content": "ACC Premium Cement provides high strength and smooth finish, suitable for critical structures."
+            },
+            {
+              "name": "Acc gold",
+              "image": "acc-gold.jpg",
+              "content": "ACC Gold Cement is known for its superior bonding strength and durability."
+            }
+          ]
+        },
+        {
+          "brand": "Ultratech",
+          "content": "Ultratech Cement is known for its consistent quality and high compressive strength.",
+          "types": [
+            {
+              "name": "Ultratech plain",
+              "image": "ultratech-plain.jpg",
+              "content": "Ultratech Plain Cement is suitable for general-purpose construction work."
+            },
+            {
+              "name": "Ultratech super",
+              "image": "ultratech-super.jpg",
+              "content": "Ultratech Super Cement offers enhanced durability and strength, ideal for heavy-duty projects."
+            },
+            {
+              "name": "Ultratech Premium",
+              "image": "ultratech-premium.jpg",
+              "content": "Ultratech Premium Cement ensures high-quality finish and long-lasting durability."
+            }
+          ]
+        },
+        {
+          "name": "Lafarge Concreto",
+          "image": "lafarge-concreto.jpg",
+          "content": "Lafarge Concreto Cement is designed for superior workability and high strength applications."
+        },
+        {
+          "name": "Ambuja Cement",
+          "image": "ambuja-cement.jpg",
+          "content": "Ambuja Cement is known for its high compressive strength and fast-setting properties."
+        },
+        {
+          "name": "Birla Gold",
+          "image": "birla-gold.jpg",
+          "content": "Birla Gold Cement is popular for its uniform quality and excellent bonding capacity."
+        },
+        {
+          "name": "Shree Cement",
+          "image": "shree-cement.jpg",
+          "content": "Shree Cement offers reliable performance and is ideal for various construction needs."
+        }
+      ]
+    },
+    {
+      "category": "Bricks",
+      "name": "Bricks",
+      "image": "/images/construction_items/bricks.png",
+      "tag": "Mandatory",
+      "content": "Bricks are essential building blocks used for constructing walls, foundations, and other structures.",
+      "items": [
+        {
+          "name": "Redbricks",
+          "image": "redbricks.jpg",
+          "content": "Redbricks provide excellent thermal insulation and are commonly used in traditional construction."
+        },
+        {
+          "name": "Flyash",
+          "image": "flyash-bricks.jpg",
+          "content": "Flyash bricks are eco-friendly and offer better strength and durability compared to conventional bricks."
+        },
+        {
+          "name": "AAC block",
+          "image": "aac-block.jpg",
+          "content": "AAC blocks are lightweight and provide superior insulation, making them ideal for modern buildings."
+        }
+      ]
+    },
+    {
+      "category": "Wiring",
+      "name": "Wiring",
+      "tag": "Recommended",
+      "image": "/images/construction_items/wire.png",
+      "content": "Electrical wiring is crucial for providing power and connectivity throughout a building.",
+      "items": [
+        {
+          "name": "Havells",
+          "image": "havells-wiring.jpg",
+          "content": "Havells wires ensure high safety standards and are suitable for residential and commercial installations."
+        },
+        {
+          "name": "Anchor",
+          "image": "anchor-wiring.jpg",
+          "content": "Anchor wiring is known for its durability and reliable performance in electrical systems."
+        },
+        {
+          "name": "Polycab",
+          "image": "polycab-wiring.jpg",
+          "content": "Polycab wires offer energy efficiency and are designed for heavy-duty electrical requirements."
+        },
+        {
+          "name": "KEI",
+          "image": "kei-wiring.jpg",
+          "content": "KEI wires provide excellent conductivity and come with high insulation properties for safety."
+        }
+      ]
+    },
+    {
+      "category": "aggregates",
+      "name": "Aggregates",
+      "tag": "Mandatory",
+      "image": "/images/construction_items/cement.png",
+      "content": "Aggregates are used in concrete and plaster to provide bulk and improve the stability of structures.",
+      "items": [
+        {
+          "type": "Gitti",
+          "content": "Gitti is a type of crushed stone used in concrete mixtures for strength.",
+          "varieties": [
+            {
+              "name": "Kodarma gitti",
+              "image": "kodarma-gitti.jpg",
+              "content": "Kodarma Gitti is known for its high durability and is used in concrete mix designs."
+            }
+          ]
+        },
+        {
+          "type": "Sand",
+          "content": "Sand is an essential ingredient in concrete and plaster for its binding properties.",
+          "varieties": [
+            {
+              "name": "Son Baalutt",
+              "image": "son-baalutt-sand.jpg",
+              "content": "Son Baalutt Sand is known for its fine quality and is used in plastering and concrete works."
+            }
+          ]
+        },
+        {
+          "type": "Concrete",
+          "content": "Concrete is a mixture of cement, sand, and aggregates used to create strong and durable structures.",
+          "varieties": [
+            {
+              "name": "Rmc",
+              "image": "rmc-concrete.jpg",
+              "content": "RMC (Ready Mix Concrete) is pre-mixed and delivered directly to the construction site."
+            },
+            {
+              "name": "Manual concreting",
+              "image": "manual-concreting.jpg",
+              "content": "Manual concreting involves mixing concrete on-site using traditional methods."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Plaster",
+      "name": "Plaster",
+      "tag": "Mandatory",
+      "image": "/images/construction_items/cement.png",
+      "content": "Plaster is used to create a smooth surface on walls and ceilings, ready for painting or wallpapering.",
+      "items": [
+        {
+          "name": "Cement plaster",
+          "image": "cement-plaster.jpg",
+          "content": "Cement plaster is a mixture of cement, sand, and water used for wall plastering."
+        },
+        {
+          "name": "Gypsum plaster",
+          "image": "gypsum-plaster.jpg",
+          "content": "Gypsum plaster is lightweight and offers a smooth finish, suitable for interior walls."
+        }
+      ]
+    },
+    {
+      "category": "Pipes",
+      "name": "Pipes",
+      "tag": "Recommended",
+      "image": "/images/construction_items/tap.png",
+      "content": "Pipes are used for plumbing systems to carry water, gas, and other fluids throughout a building.",
+      "items": [
+        {
+          "name": "Ashirvad",
+          "image": "ashirvad-pipes.jpg",
+          "content": "Ashirvad pipes are known for their leak-proof design and durability in plumbing systems."
+        },
+        {
+          "name": "Supreme",
+          "image": "supreme-pipes.jpg",
+          "content": "Supreme pipes offer high-quality standards for various plumbing needs."
+        },
+        {
+          "name": "Local brand",
+          "image": "local-pipes.jpg",
+          "content": "Local brand pipes are an affordable option for basic plumbing requirements."
+        }
+      ]
+    },
+    {
+      "category": "Paint",
+      "name": "Paint",
+      "tag": "Recommended",
+      "image": "/images/construction_items/paint.png",
+      "content": "Paint is used to provide a protective and decorative finish on walls and surfaces.",
+      "items": [
+        {
+          "name": "Asian Paints",
+          "image": "asian-paints.jpg",
+          "content": "Asian Paints offers a range of colors and finishes for interior and exterior surfaces."
+        },
+        {
+          "name": "Dulux",
+          "image": "dulux-paints.jpg",
+          "content": "Dulux Paints are known for their vibrant colors and long-lasting durability."
+        },
+        {
+          "name": "Local brand",
+          "image": "local-paints.jpg",
+          "content": "Local brand paints provide cost-effective solutions for home and commercial painting."
+        }
+      ]
+    },
+    {
+      "category": "Windows",
+      "name": "Windows",
+      "tag": "Recommended",
+      "image": "/images/construction_items/window.png",
+      "content": "Windows allow natural light and ventilation into a building while enhancing the aesthetics.",
+      "items": [
+        {
+          "name": "UPVC Windows",
+          "image": "upvc-windows.jpg",
+          "content": "UPVC windows offer durability and energy efficiency, ideal for modern constructions."
+        },
+        {
+          "name": "Aluminum Windows",
+          "image": "aluminum-windows.jpg",
+          "content": "Aluminum windows are known for their strength and sleek appearance."
+        },
+        {
+          "name": "Wooden Windows",
+          "image": "wooden-windows.jpg",
+          "content": "Wooden windows provide a classic look and good insulation properties."
+        }
+      ]
+    },
+    {
+      "category": "Doors",
+      "name": "Doors",
+      "tag": "Recommended",
+      "image": "/images/construction_items/door.png",
+      "content": "Doors provide security and privacy while adding to the aesthetic appeal of a building.",
+      "items": [
+        {
+          "name": "Wooden Doors",
+          "image": "wooden-doors.jpg",
+          "content": "Wooden doors offer a warm and natural look, suitable for both interiors and exteriors."
+        },
+        {
+          "name": "Metal Doors",
+          "image": "metal-doors.jpg",
+          "content": "Metal doors provide high security and durability, ideal for exterior entrances."
+        },
+        {
+          "name": "Glass Doors",
+          "image": "glass-doors.jpg",
+          "content": "Glass doors allow natural light and a modern look, commonly used in commercial spaces."
+        }
+      ]
+    }
+  ],
+  "floorsList": [
+    { "name": "1 ( Ground Floor)", "value": "gf" },
+    { "name": "2 ( G + 1 )", "value": "gf+1" },
+    { "name": "3 ( G + 2 )", "value": "gf+2" },
+    { "name": "4 ( G + 3 )", "value": "gf+3" },
+    { "name": "5 ( G + 4 )", "value": "gf+4" },
+    { "name": "6 ( G + 5 )", "value": "gf+5" },
+    { "name": "7 ( G + 6 )", "value": "gf+6" },
+    { "name": "8 ( G + 7 )", "value": "gf+7" }
+  ],
+  "areaList": [
+    { "name": "1000-1500 sq ft", "value": "1000-1500" },
+    { "name": "1501-2000 sq ft", "value": "1501-2000" },
+    { "name": "2001-2500 sq ft", "value": "2001-2500" },
+    { "name": "2501-3000 sq ft", "value": "2501-3000" }
+  ],
+  "cityList": [
+    { "name": "Mumbai", "value": "mumbai" },
+    { "name": "Delhi", "value": "delhi" },
+    { "name": "Bangalore", "value": "bangalore" },
+    { "name": "Chennai", "value": "chennai" }
   ]
 }

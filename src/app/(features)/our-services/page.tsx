@@ -57,6 +57,9 @@ export default function OurServices() {
                 color="contrast.200"
                 rounded="full"
                 px="5"
+                fontSize="md"
+                fontWeight="normal"
+                fontFamily="Roboto"
                 rightIcon={<ArrowForwardIcon w="5" />}
                 onClick={() => push("/estimate")}
                 _hover={{
@@ -64,7 +67,7 @@ export default function OurServices() {
                   color: "contrast.200",
                 }}
               >
-                Let Build
+                Lets Build
               </Button>
             }
           />
@@ -79,13 +82,16 @@ export default function OurServices() {
                 onClick={() => push("/our-services/residential_interiors")}
                 color="contrast.200"
                 rounded="full"
+                fontSize="md"
+                fontWeight="normal"
+                fontFamily="Roboto"
                 px="5"
                 _hover={{
                   background: "secondary.500",
                   color: "contrast.200",
                 }}
               >
-                Let Build
+                Lets Build
               </Button>
             }
           />
@@ -100,13 +106,16 @@ export default function OurServices() {
                 onClick={() => push("/our-services/commercial_interiors")}
                 color="contrast.200"
                 rounded="full"
+                fontSize="md"
+                fontWeight="normal"
+                fontFamily="Roboto"
                 px="5"
                 _hover={{
                   background: "secondary.500",
                   color: "contrast.200",
                 }}
               >
-                Let Build
+                Lets Build
               </Button>
             }
           />
