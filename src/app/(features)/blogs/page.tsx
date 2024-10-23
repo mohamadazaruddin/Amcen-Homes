@@ -37,21 +37,37 @@ export default function Blogs() {
   return (
     <React.Fragment>
       <div ref={topRef}></div>
-      <Box px={20} py={10}>
-        <Heading textAlign="center" color="primary.500" fontSize="48px" mt="6">
+      <Box px={{ base: 5, md: 20 }} py={{ base: 5, md: 10 }}>
+        <Heading
+          textAlign="center"
+          color="primary.500"
+          fontSize={{ base: "32px", md: "48px" }}
+          mt={{ base: "0", md: "6" }}
+        >
           <Box as="span" color="secondary.500">
             Our{" "}
           </Box>
           Blogs
         </Heading>
-        <Text fontSize="md" color="secondary.500" textAlign="center" mt="2">
-          Discover the latest trends and practical tips in construction and
-          renovation. <br /> Our blog features expert advice and inspiring
-          stories to help you transform your spaces and stay ahead in the
-          industry.
+        <Text
+          fontSize={{ base: "sm", md: "md" }}
+          color="secondary.500"
+          textAlign="center"
+          mt="2"
+        >
+          Our blog features expert advice and inspiring stories to help you
+          transform <Box display={{ base: "inline", md: "block" }}></Box> your
+          spaces and stay ahead in the industry.
         </Text>
-        <Flex overflow="hidden" mb={4} gap="10" bg="white" mt="16">
-          <Box w="50%">
+        <Flex
+          overflow="hidden"
+          flexDir={{ base: "column", md: "row" }}
+          mb={4}
+          gap={{ base: "5", md: "10" }}
+          bg="white"
+          mt={{ base: "5", md: "16" }}
+        >
+          <Box w={{ base: "full", md: "50%" }}>
             <Image
               src={readingBlog.image}
               alt={readingBlog.title}
@@ -61,7 +77,7 @@ export default function Blogs() {
               borderRadius="lg"
             />
           </Box>
-          <Box w="50%">
+          <Box w={{ base: "full", md: "50%" }}>
             <Flex
               w="full"
               h="full"
@@ -73,17 +89,21 @@ export default function Blogs() {
                   <Avatar
                     src={readingBlog.user.profile_image}
                     name={readingBlog.user.name}
-                    boxSize="35px"
+                    boxSize={{ base: "20px", md: "35px" }}
                     size="sm"
                     bg="#298bd1"
                     mr="2"
                   />
                   {/* <Box> */}
-                  <Text fontWeight="bold" mr="2" fontSize="md">
+                  <Text
+                    fontWeight="bold"
+                    mr="2"
+                    fontSize={{ base: "sm", md: "md" }}
+                  >
                     {readingBlog.user.name}
                   </Text>
                   <Text
-                    fontSize="sm"
+                    fontSize={{ base: "xs", md: "sm" }}
                     color="gray.500"
                     fontFamily="'Roboto', sans-serif"
                   >
@@ -91,17 +111,21 @@ export default function Blogs() {
                   </Text>
                   {/* </Box> */}
                 </Flex>
-                <Text fontSize="32px" fontWeight="bold" mb="2">
+                <Text
+                  fontSize={{ base: "24px", md: "32px" }}
+                  fontWeight="bold"
+                  mb="2"
+                >
                   {readingBlog.title}
                 </Text>
-                <Text fontSize="md" mb="4">
+                <Text fontSize={{ base: "sm", md: "md" }} mb="4">
                   {readingBlog.content}
                 </Text>
               </Box>
               <Flex
                 align="center"
                 fontFamily="'Roboto', sans-serif"
-                fontSize="md"
+                fontSize={{ base: "xs", md: "md" }}
                 fontWeight="medium"
               >
                 <Icon
@@ -130,7 +154,7 @@ export default function Blogs() {
             md: "repeat(2, 1fr)",
             lg: "repeat(4, 1fr)",
           }}
-          gap={6}
+          gap={{ base: 4, md: 6 }}
         >
           {blogs.map((blog, index) => (
             <Blogcard

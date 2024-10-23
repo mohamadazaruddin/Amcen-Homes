@@ -21,7 +21,12 @@ const WhatsAppChat = ({ isOpen, setIsOpen }: any) => {
     message
   )}`;
   return (
-    <Box position="fixed" bottom="40px" zIndex={9999} right="40px">
+    <Box
+      position="fixed"
+      bottom={{ base: "25px", md: "60px" }}
+      zIndex={9999}
+      right={{ base: "25px", md: "40px" }}
+    >
       <Box position="relative">
         <IconButton
           aria-label="WhatsApp Chat"

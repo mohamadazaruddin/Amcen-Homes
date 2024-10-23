@@ -1,3 +1,4 @@
+"use client";
 import FAQ from "@/app/components/FaqsCard";
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
@@ -9,8 +10,13 @@ export default function FAQs() {
   );
 
   return (
-    <Box>
-      <Heading textAlign="center" color="primary.500" mt="16" fontSize="48px">
+    <Box px={{ base: "5", md: "0" }}>
+      <Heading
+        textAlign="center"
+        color="primary.500"
+        mt={{ base: "5", md: "16" }}
+        fontSize={{ base: "32px", md: "48px" }}
+      >
         Frequently{" "}
         <Box as="span" color="secondary.500">
           Asked{" "}
@@ -38,10 +44,27 @@ export default function FAQs() {
           Ask a Question ?
         </Button>
       </Flex>
-      <Flex px={10} gap="5" my="10">
+      <Flex
+        display={{ base: "none", md: "flex" }}
+        px={{ base: 5, md: 10 }}
+        gap="5"
+        my="10"
+      >
         {chunkedFAQs?.map((faqGroup, index) => (
           <Flex key={index} wrap="wrap" justify="space-between" mb={6} w="full">
             <FAQ faqs={faqGroup} />
+          </Flex>
+        ))}
+      </Flex>
+      <Flex
+        display={{ base: "inline", md: "none" }}
+        px={{ base: 5, md: 10 }}
+        gap="2"
+        my="10"
+      >
+        {faqs?.map((faq, index) => (
+          <Flex key={index} w="full">
+            <FAQ faqs={[faq]} />
           </Flex>
         ))}
       </Flex>

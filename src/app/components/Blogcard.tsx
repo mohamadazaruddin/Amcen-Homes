@@ -18,7 +18,7 @@ export default function Blogcard({ blog, action }: any) {
         src={blog.image}
         alt={blog.title}
         width="100%"
-        height="200px"
+        height={{ base: "150px", md: "200px" }}
         objectFit="cover"
       />
       <Box p="4">
@@ -26,16 +26,20 @@ export default function Blogcard({ blog, action }: any) {
           <Avatar
             src={blog?.user?.profile_image}
             name={blog?.user?.name}
-            boxSize="35px"
+            boxSize={{ base: "28px", md: "35px" }}
             size="sm"
             mr="2"
           />
           <Box>
-            <Text fontWeight="semibold" fontSize="sm" fontFamily="normal">
+            <Text
+              fontWeight="semibold"
+              fontSize={{ base: "xs", md: "sm" }}
+              fontFamily="normal"
+            >
               {blog?.user?.name}
             </Text>
             <Text
-              fontSize="xs"
+              fontSize={{ base: "10px", md: "xs" }}
               fontWeight="medium"
               fontFamily="'Roboto', sans-serif"
               color="gray.500"
@@ -48,7 +52,7 @@ export default function Blogcard({ blog, action }: any) {
         <Text fontSize="md" fontWeight="bold" mb="2" noOfLines={1}>
           {blog.title}
         </Text>
-        <Text fontSize="sm" noOfLines={2} mb="8">
+        <Text fontSize="sm" noOfLines={2} mb={{ base: "4", md: "8" }}>
           {blog.content}
         </Text>
 

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { HeaderProps } from "../services/types";
 import {
@@ -11,15 +12,29 @@ import {
   MenuItem,
   MenuList,
   useBreakpointValue,
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
+  useDisclosure,
+  DrawerCloseButton,
+  Box,
+  DrawerFooter,
 } from "@chakra-ui/react";
 import AppLogo from "./AppLogo";
 import { useRouter, usePathname } from "next/navigation";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 export default function Header({ name }: HeaderProps) {
   const { push } = useRouter();
   const pathname = usePathname();
-  const isMobile = useBreakpointValue({ base: true, md: false });
+
+  const {
+    isOpen: mobileHeaderisOpen,
+    onOpen: mobileHeaderonOpen,
+    onClose: mobileHeaderonClose,
+  } = useDisclosure();
   const NavItems = [
     {
       pageName: "Home",
@@ -47,6 +62,10 @@ export default function Header({ name }: HeaderProps) {
       url: "/faqs",
     },
   ];
+  const isMobile = useBreakpointValue(
+    { base: true, md: false },
+    { ssr: false }
+  );
   return (
     // <Flex
     //   pos="sticky"
@@ -123,22 +142,78 @@ export default function Header({ name }: HeaderProps) {
       />
 
       {isMobile ? (
-        // Mobile menu
-        <Menu>
-          <MenuButton
-            as={IconButton}
-            icon={<ChevronDownIcon />}
+        // Mobile drawer
+        <>
+          <IconButton
+            icon={<HamburgerIcon h="6" w="6" />}
             variant="outline"
             aria-label="Navigation Menu"
+            onClick={mobileHeaderonOpen}
+            p="0"
+            border="none"
           />
-          <MenuList>
-            {NavItems.map(({ pageName, href }, i) => (
-              <MenuItem key={i}>
-                <Link href={href}>{pageName}</Link>
-              </MenuItem>
-            ))}
-          </MenuList>
-        </Menu>
+
+          <Drawer
+            isOpen={mobileHeaderisOpen}
+            placement="right"
+            onClose={mobileHeaderonClose}
+          >
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerCloseButton mt="3" fontSize="sm" fontWeight="normal" />
+              <DrawerHeader borderBottom="1px solid" borderColor="#22232626">
+                <AppLogo
+                  logoHeight={useBreakpointValue({ base: 20, md: 25 })}
+                  logoWidth={useBreakpointValue({ base: 30, md: 35 })}
+                  appNameProps={{
+                    fontSize: useBreakpointValue({ base: "24px", md: "32px" }),
+                  }}
+                />
+              </DrawerHeader>
+              <DrawerBody pt="5">
+                {NavItems.map(({ pageName, href }, i) => (
+                  <Box key={i}>
+                    <Link
+                      mb="4"
+                      display="inline-block"
+                      fontSize="24px"
+                      fontWeight="medium"
+                      color={
+                        href === pathname ? "primary.500" : "secondary.500"
+                      }
+                      _hover={{ color: "primary.500" }}
+                      textDecoration="none"
+                      borderBottom="2px solid"
+                      borderColor={
+                        href === pathname ? "primary.500" : "transparent"
+                      }
+                      href={href}
+                      onClick={mobileHeaderonClose}
+                    >
+                      {pageName}
+                    </Link>
+                  </Box>
+                ))}
+              </DrawerBody>
+              <DrawerFooter>
+                <Button
+                  background="secondary.600"
+                  color="contrast.200"
+                  rounded="full"
+                  px="5"
+                  w="full"
+                  _hover={{
+                    background: "secondary.500",
+                    color: "contrast.200",
+                  }}
+                  fontFamily="Roboto"
+                >
+                  Contact Us
+                </Button>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+        </>
       ) : (
         // Desktop menu
         <Flex gap={8} align="center">

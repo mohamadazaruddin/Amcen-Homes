@@ -12,20 +12,28 @@ import { useRouter } from "next/navigation";
 export default function Footer() {
   const linkStyle = {
     display: "block",
-    fontSize: "sm",
+    fontSize: { base: "sm", md: "md" },
+    fontWeight: "normal",
     color: "#ede8e8",
     mb: 1,
   };
   const { push } = useRouter();
+
   return (
     <Box bg="#000000">
-      <Flex px="10" gap="10" justify="space-between" py="10">
-        <Box w="25%">
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        px={{ base: 4, md: 10 }}
+        gap={{ base: 10, md: 10 }}
+        justify="space-between"
+        py={{ base: 6, md: 10 }}
+      >
+        <Box w={{ base: "100%", md: "25%" }}>
           <AppLogo
-            logoHeight={24}
-            logoWidth={24}
+            logoHeight={28}
+            logoWidth={28}
             appNameProps={{
-              fontSize: "24px",
+              fontSize: { base: "20px", md: "24px" },
               color: "#fff",
               flexWrap: "nowrap",
             }}
@@ -34,16 +42,22 @@ export default function Footer() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
             deleniti modi, rerum id maiores,
           </Text>
-          <Flex mt="6" color="#fff !important" gap="4">
+          <Flex mt="6" color="#fff" gap="4">
             <FacebookIcon w="6" h="6" cursor="pointer" />
             <InstaIcon w="6" h="6" cursor="pointer" />
             <TwitterIcon w="6" h="6" cursor="pointer" />
             <WhatsappOutlineIcon w="6" h="6" cursor="pointer" />
           </Flex>
         </Box>
-        <Flex w="50%" justify="space-around">
+
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          w={{ base: "100%", md: "50%" }}
+          justify="space-between"
+          gap={{ base: "5", md: "auto" }}
+        >
           <Box>
-            <Text mb="3" fontSize="md" fontWeight="semibold" color="#fff">
+            <Text mb="3" fontSize="lg" fontWeight="semibold" color="#EDAB5B">
               Company
             </Text>
             <Link sx={linkStyle} href="/#about-us">
@@ -60,13 +74,13 @@ export default function Footer() {
             </Link>
           </Box>
           <Box>
-            <Text mb="3" fontSize="md" fontWeight="semibold" color="#fff">
+            <Text mb="3" fontSize="lg" fontWeight="semibold" color="#EDAB5B">
               Useful Links
             </Text>
-            <Link sx={linkStyle} href={"/terms-and-condition"} >
+            <Link sx={linkStyle} href="/terms-and-condition">
               Terms & Conditions
             </Link>
-            <Link sx={linkStyle} href="/privacy-policy" >
+            <Link sx={linkStyle} href="/privacy-policy">
               Privacy Policy
             </Link>
             <Link sx={linkStyle}>Feedback</Link>
@@ -75,7 +89,7 @@ export default function Footer() {
             </Link>
           </Box>
           <Box>
-            <Text mb="3" fontSize="md" fontWeight="semibold" color="#fff">
+            <Text mb="3" fontSize="lg" fontWeight="semibold" color="#EDAB5B">
               Resource
             </Text>
             <Link sx={linkStyle} href="/blogs">
@@ -87,8 +101,9 @@ export default function Footer() {
             </Link>
           </Box>
         </Flex>
-        <Box w="25%" pl="10">
-          <Text mb="5" fontSize="md" fontWeight="semibold" color="#fff">
+
+        <Box w={{ base: "100%", md: "25%" }} pl={{ base: 0, md: 10 }}>
+          <Text mb="5" fontSize="lg" fontWeight="semibold" color="#EDAB5B">
             Company
           </Text>
           <Flex gap="2" align="center">
@@ -103,14 +118,15 @@ export default function Footer() {
             >
               <PhoneIcon h="4" w="4" />
             </Flex>
-            <Text
+            <Link
+              href="tel:+19999999999"
               color="#ede8e8"
               fontSize="sm"
               fontFamily="'Roboto', sans-serif"
               fontWeight="normal"
             >
               +91 98745 63210
-            </Text>
+            </Link>
           </Flex>
           <Flex mt="4" gap="2" align="center">
             <Flex
@@ -124,14 +140,15 @@ export default function Footer() {
             >
               <EmailIcon h="4" w="4" />
             </Flex>
-            <Text
+            <Link
+              href="mailto:example@example.com?subject=Inquiry&body=Hello%20there!"
               color="#ede8e8"
               fontSize="sm"
               fontFamily="'Roboto', sans-serif"
               fontWeight="normal"
             >
               amcenhome@gmail.com
-            </Text>
+            </Link>
           </Flex>
           <Flex mt="4" gap="2">
             <Flex
@@ -160,15 +177,30 @@ export default function Footer() {
         </Box>
       </Flex>
       <Divider borderColor="#fafafa" mt="5" />
-      <Flex justify="space-between" px="10" py="5">
-        <Box color="#fff !important" fontSize="sm" fontWeight="normal">
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        justify="space-between"
+        px={{ base: 4, md: 10 }}
+        py="5"
+      >
+        <Box
+          color="#fff"
+          fontSize="sm"
+          fontWeight="normal"
+          textAlign={{
+            base: "center",
+            md: "left",
+          }}
+        >
           @Copyright by Amcen homes. All rights reserved
         </Box>
         <Flex
           align="center"
-          color="#fff !important"
+          color="#fff"
           gap={5}
+          display={{ base: "none", md: "flex" }}
           justify="space-between"
+          mt={{ base: "5", md: "0" }}
         >
           <Link sx={linkStyle} onClick={() => push("/terms-and-condition")}>
             Terms & Condition

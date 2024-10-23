@@ -15,22 +15,116 @@ export default function Gallery() {
     "450px",
     "350px",
   ];
+
+  const mobHeight = [
+    "150px",
+    "100px",
+    "120px",
+    "200px",
+    "120px",
+    "220px",
+    "180px",
+    "250px",
+  ];
   return (
-    <Box px="10">
-      <Heading textAlign="center" color="primary.500" mt="16" fontSize="48px">
+    <Box px={{ base: "5", md: "10" }} py={{ base: 5, md: 10 }}>
+      <Heading
+        textAlign="center"
+        color="primary.500"
+        mt={{ base: "0", md: "6" }}
+        fontSize={{ base: "32px", md: "48px" }}
+      >
         <Box as="span" color="secondary.500">
           Our{" "}
         </Box>
         Gallery
       </Heading>
-      <Text fontSize="md" color="secondary.500" textAlign="center" mt="2">
+      <Text
+        fontSize={{ base: "sm", md: "md" }}
+        color="secondary.500"
+        textAlign="center"
+        mt="2"
+      >
         Explore our gallery of architectural designs, craftsmanship, and
-        construction progress—capturing <br /> the journey from plans to
-        finished spaces.
+        construction progress—capturing{" "}
+        <Box display={{ base: "inline", md: "block" }}></Box> the journey from
+        plans to finished spaces.
       </Text>
 
-      <Flex gap="5" my="10">
-        <Box w="33.33%">
+      {/* mobile view  */}
+      <Flex gap="2" my="10" display={{ base: "flex", md: "none" }}>
+        <Box w={{ md: "50%" }}>
+          <Flex direction="column" gap="2">
+            <Image
+              rounded="lg"
+              src={gallery[0].image}
+              alt={gallery[0].title}
+              style={{ width: "100%", height: mobHeight[0] }}
+            />
+            <Image
+              rounded="lg"
+              src={gallery[1].image}
+              alt={gallery[1].title}
+              style={{ width: "100%", height: mobHeight[1] }}
+            />
+            <Image
+              rounded="lg"
+              src={gallery[2].image}
+              alt={gallery[2].title}
+              style={{ width: "100%", height: mobHeight[2] }}
+            />
+            <Image
+              rounded="lg"
+              src={gallery[9].image}
+              alt={gallery[9].title}
+              style={{ width: "100%", height: mobHeight[9] }}
+            />
+            <Image
+              rounded="lg"
+              src={gallery[6].image}
+              alt={gallery[6].title}
+              style={{ width: "100%", height: mobHeight[6] }}
+            />
+            <Image
+              rounded="lg"
+              src={gallery[7].image}
+              alt={gallery[7].title}
+              style={{ width: "100%", height: mobHeight[7] }}
+            />
+          </Flex>
+        </Box>
+        <Box w={{ md: "50%" }}>
+          <Flex direction="column" gap="4">
+            <Image
+              rounded="lg"
+              src={gallery[3].image}
+              alt={gallery[3].title}
+              style={{ width: "100%", height: mobHeight[3] }}
+            />
+            <Image
+              rounded="lg"
+              src={gallery[4].image}
+              alt={gallery[4].title}
+              style={{ width: "100%", height: mobHeight[4] }}
+            />
+            <Image
+              rounded="lg"
+              src={gallery[5].image}
+              alt={gallery[5].title}
+              style={{ width: "100%", height: mobHeight[5] }}
+            />{" "}
+            <Image
+              rounded="lg"
+              src={gallery[8].image}
+              alt={gallery[8].title}
+              style={{ width: "100%", height: mobHeight[8] }}
+            />
+          </Flex>
+        </Box>
+      </Flex>
+      {/* desktop view  */}
+      <Flex gap="5" my="10" display={{ base: "none", md: "flex" }}>
+        <Box w={{ md: "33.33%" }}>
           <Flex direction="column" gap="5">
             <Image
               rounded="lg"
@@ -58,7 +152,7 @@ export default function Gallery() {
             />
           </Flex>
         </Box>
-        <Box w="33.33%">
+        <Box w={{ md: "33.33%" }}>
           <Flex
             direction="column"
             gap="
@@ -84,7 +178,7 @@ export default function Gallery() {
             />
           </Flex>
         </Box>
-        <Box w="33.33%">
+        <Box w={{ md: "33.33%" }}>
           <Flex direction="column" gap="5">
             <Image
               rounded="lg"

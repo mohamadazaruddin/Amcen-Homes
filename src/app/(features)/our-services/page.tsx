@@ -8,7 +8,7 @@ import React from "react";
 export default function OurServices() {
   const { push } = useRouter();
   return (
-    <Box bg="#fff" pb="20">
+    <Box bg="#fff" pb={{ base: "10", md: "20" }}>
       <Box
         backgroundRepeat="no-repeat"
         backgroundPosition="center"
@@ -19,23 +19,31 @@ export default function OurServices() {
           bg="#000000b8"
           w="full"
           h="full"
-          pt="20"
-          pb="100px"
+          pt={{ base: "10", md: "20" }}
+          pb={{ base: "50px", md: "100px" }}
           textAlign="center"
         >
-          <Text fontSize="48px" color="#fff" fontWeight="bold">
+          <Text
+            fontSize={{ base: "24px", md: "48px" }}
+            color="#fff"
+            fontWeight="bold"
+          >
             Our{" "}
             <Box as="span" color="#EDAB5B">
               Services
             </Box>
           </Text>
-          <Text color="#fff" fontSize="md" fontWeight="normal">
+          <Text
+            fontSize={{ base: "sm", md: "md" }}
+            color="#fff"
+            fontWeight="normal"
+          >
             Give your home a new look with these interior <br /> design ideas
             curated for you
           </Text>
         </Box>
       </Box>
-      <Box px="20">
+      <Box px={{ base: "5", md: "20" }}>
         <Grid
           templateColumns={{
             base: "1fr",
@@ -45,7 +53,7 @@ export default function OurServices() {
           gap="5"
           maxW={"1200px"}
           mx="auto"
-          mt="-50px"
+          mt={{ base: "-25px", md: "-50px" }}
         >
           <ServiceCard
             image="/images/home_construction.png"
@@ -57,7 +65,9 @@ export default function OurServices() {
                 color="contrast.200"
                 rounded="full"
                 px="5"
-                fontSize="md"
+                h="auto"
+                py="2"
+                fontSize={{ base: "sm", md: "md" }}
                 fontWeight="normal"
                 fontFamily="Roboto"
                 rightIcon={<ArrowForwardIcon w="5" />}
@@ -82,7 +92,9 @@ export default function OurServices() {
                 onClick={() => push("/our-services/residential_interiors")}
                 color="contrast.200"
                 rounded="full"
-                fontSize="md"
+                py="2"
+                h="auto"
+                fontSize={{ base: "sm", md: "md" }}
                 fontWeight="normal"
                 fontFamily="Roboto"
                 px="5"
@@ -106,7 +118,9 @@ export default function OurServices() {
                 onClick={() => push("/our-services/commercial_interiors")}
                 color="contrast.200"
                 rounded="full"
-                fontSize="md"
+                py="2"
+                h="auto"
+                fontSize={{ base: "sm", md: "md" }}
                 fontWeight="normal"
                 fontFamily="Roboto"
                 px="5"

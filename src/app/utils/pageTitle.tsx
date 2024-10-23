@@ -8,13 +8,21 @@ export default function pageTitle(
     const [word1, word2] = pagetitlrString?.split(" ");
     return (
       <>
-        <Text fontSize="48px" color="#fff" fontWeight="bold">
+        <Text
+          fontSize={{ base: "24px", md: "48px" }}
+          color="#fff"
+          fontWeight="bold"
+        >
           {word1}{" "}
           <Box as="span" color="#EDAB5B">
             {word2}
           </Box>
         </Text>
-        <Text color="#fff" fontSize="md" fontWeight="normal">
+        <Text
+          color="#fff"
+          fontSize={{ base: "sm", md: "md" }}
+          fontWeight="normal"
+        >
           {description}
         </Text>
       </>

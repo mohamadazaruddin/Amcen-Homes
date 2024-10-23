@@ -2,8 +2,17 @@ import { Box, Text, UnorderedList, ListItem, Link } from "@chakra-ui/react";
 
 export default function TermsAndConditions() {
   return (
-    <Box px="20" py="10" fontFamily="Roboto">
-      <Text fontSize="40px" fontWeight="bold" mb="10" textAlign="center">
+    <Box
+      px={{ base: "5", md: "20" }}
+      py={{ base: "5", md: "10" }}
+      fontFamily="Roboto"
+    >
+      <Text
+        fontSize={{ base: "24px", md: "48px" }}
+        fontWeight="bold"
+        mb={{ base: "5", md: "10" }}
+        textAlign="center"
+      >
         Terms and Conditions
       </Text>
 

@@ -17,7 +17,7 @@ export default function Service({ params }: { params: { service: string } }) {
     setSelectedService(data[0]);
   }, []);
   return (
-    <Box bg="#fff" pb="20">
+    <Box bg="#fff" pb={{ base: "10", md: "20" }}>
       <Box
         backgroundRepeat="no-repeat"
         backgroundPosition="center"
@@ -28,8 +28,8 @@ export default function Service({ params }: { params: { service: string } }) {
           bg="#000000b8"
           w="full"
           h="full"
-          pt="20"
-          pb="100px"
+          pt={{ base: "10", md: "20" }}
+          pb={{ base: "50px", md: "100px" }}
           textAlign="center"
         >
           {selectedService && (
@@ -42,17 +42,17 @@ export default function Service({ params }: { params: { service: string } }) {
           )}
         </Box>
       </Box>
-      <Box px="20">
+      <Box px={{ base: "5", md: "20" }}>
         <Grid
           templateColumns={{
             base: "1fr",
             md: "repeat(2, 1fr)",
             lg: "repeat(3, 1fr)",
           }}
-          gap="10"
+          gap="5"
           maxW={"1200px"}
           mx="auto"
-          mt="-50px"
+          mt={{ base: "-25px", md: "-50px" }}
         >
           {selectedService?.subItems &&
             selectedService.subItems.map((item: any, i: any) => (
@@ -70,7 +70,9 @@ export default function Service({ params }: { params: { service: string } }) {
                     }}
                     color="contrast.200"
                     rounded="full"
-                    fontSize="md"
+                    h="auto"
+                    py="2"
+                    fontSize={{ base: "sm", md: "md" }}
                     fontWeight="normal"
                     fontFamily="Roboto"
                     px="5"
