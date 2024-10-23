@@ -8,7 +8,7 @@ export default function Services({ servicesList }: any) {
   const [viewService, setViewService] = React.useState(servicesList[0]);
 
   return (
-    <Flex px={10} py="100px" bg={"#f8f8f8"}>
+    <Flex px={10} py="100px" bg={"#282a2c"}>
       <Box w="40%">
         <Box
           w="full"
@@ -19,24 +19,20 @@ export default function Services({ servicesList }: any) {
           backgroundImage={`url('${viewService.image}')`}
           h="350px"
         ></Box>
-        <Text mt="5" fontSize="24px" fontWeight="medium" color="secondary.600">
+        <Text mt="5" fontSize="24px" fontWeight="medium" color="contrast.200">
           {viewService.name}
         </Text>
-        <Text
-          mt="2.5"
-          fontSize="16px"
-          fontWeight="normal"
-          color="secondary.600"
-        >
+        <Text mt="2.5" fontSize="16px" fontWeight="normal" color="contrast.200">
           {viewService.content}
         </Text>
         <Box mt="10" fontWeight="bold">
           <Link
             href={"as"}
-            color="primary.500"
+            color="contrast.200 !important"
             style={{
               fontSize: "16px",
               fontWeight: "semibold",
+              color: "contrast.200",
             }}
           >
             Read More <ArrowForwardIcon />
@@ -45,10 +41,10 @@ export default function Services({ servicesList }: any) {
       </Box>
 
       <Box w="60%" pl="20" textAlign="right">
-        <Text fontSize="lg" fontWeight="normal" color="primary.500">
+        <Text fontSize="lg" fontWeight="normal" color="#EDAB5B">
           Our Services
         </Text>
-        <Text fontSize="40px" fontWeight="medium" mt={5} color="secondary.600">
+        <Text fontSize="40px" fontWeight="medium" mt={5} color="contrast.200">
           Flawless Construction Powered By Deep Expertise
         </Text>
         <Wrap spacing="10px" justify="right" mt="5">
@@ -56,12 +52,12 @@ export default function Services({ servicesList }: any) {
             <WrapItem key={i}>
               <Button
                 color={
-                  viewService.id === item.id ? "contrast.200" : "secondary.600 "
+                  viewService.id === item.id ? "secondary.600" : "contrast.200"
                 }
                 background={
-                  viewService.id === item.id ? "secondary.500" : "contrast.200"
+                  viewService.id === item.id ? "contrast.200" : "transparent"
                 }
-                fontSize="sm"
+                fontSize="md"
                 fontWeight="normal"
                 borderColor="secondary.600"
                 border="1px solid"

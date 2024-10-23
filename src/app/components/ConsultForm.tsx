@@ -66,6 +66,7 @@ export default function ConsultForm({ isOpen, onClose }: any) {
             bg="secondary.500"
             borderTopRadius="lg"
             color="#ffffff"
+            fontFamily="Roboto"
             fontSize="lg"
             fontWeight="medium"
             borderColor="#8b8b8b29"

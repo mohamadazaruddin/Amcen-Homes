@@ -15,10 +15,22 @@ const EstimateSelectBox = ({
   optionName,
   selectOption,
   setOption,
+  wrapperProps,
 }: any) => {
   return (
-    <Flex align="center" gap="4" fontFamily="Roboto" h="fit-content">
-      <Text fontSize="md" fontWeight="normal" color="secondary.500">
+    <Flex
+      align="center"
+      gap="4"
+      fontFamily="Roboto"
+      h="fit-content"
+      {...wrapperProps}
+    >
+      <Text
+        fontSize="md"
+        fontWeight="normal"
+        color="secondary.500"
+        whiteSpace="nowrap"
+      >
         {label}
       </Text>
       <Menu matchWidth={true} placement="bottom">
@@ -29,6 +41,8 @@ const EstimateSelectBox = ({
           border="1px solid"
           fontFamily="Roboto"
           borderColor="#cdc9c9"
+          w="full"
+          textAlign="start"
           gap="5"
           rightIcon={<ChevronDownIcon w="5" h="5" />}
         >

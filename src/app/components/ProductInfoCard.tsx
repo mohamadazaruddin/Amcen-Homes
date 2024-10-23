@@ -10,12 +10,21 @@ export default function ProductInfoCard({
 }: any) {
   return (
     <Box>
-      <Image h="150px" src={image} w="full" />
+      <Image h="200px" w="250px" mx="auto" src={image} />
       <Box mt="5">
         <Text fontSize="lg" fontWeight="medium" fontFamily="Roboto">
           {name}
         </Text>
-        <Text>{content}</Text>
+        <Text
+          fontSize="
+          
+          sm"
+          color="secondary.500"
+          fontWeight="normal"
+          fontFamily="Roboto"
+        >
+          {content}
+        </Text>
       </Box>
     </Box>
   );

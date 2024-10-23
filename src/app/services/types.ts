@@ -4,7 +4,7 @@ export type HeaderProps = {
   name: string;
 };
 export type appLogoProps = {
-  logoHeight: number;
-  logoWidth: number;
-  appNameProps: TextProps;
+  logoHeight?: number;
+  logoWidth?: number;
+  appNameProps?: TextProps;
 };
