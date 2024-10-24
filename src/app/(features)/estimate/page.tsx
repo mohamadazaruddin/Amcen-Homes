@@ -53,6 +53,11 @@ export default function Estimate() {
     onOpen: filterModalonOpen,
     onClose: filterModalonClose,
   } = useDisclosure();
+  const {
+    isOpen: cartModalisOpen,
+    onOpen: cartModalonOpen,
+    onClose: cartModalonClose,
+  } = useDisclosure();
   const toast = useToast();
   const handleFilterAdd = () => {
     let errorMessage = "";
@@ -115,10 +120,10 @@ export default function Estimate() {
       constructionItemsRef.current.slideNext();
     }
   };
-
+  // need to change to true
   return (
     <Box bg="#fff" pb="20">
-      <Modal size="sm" isOpen={showFiltermodal} onClose={filterModalonClose}>
+      <Modal size="sm" isOpen={false} onClose={filterModalonClose}>
         <ModalOverlay />
         <ModalContent rounded="lg" bg="#ffffff">
           <ModalHeader
@@ -194,24 +199,32 @@ export default function Estimate() {
           bg="#000000b8"
           w="full"
           h="full"
-          pt="20"
-          pb="100px"
+          pt={{ base: "10", md: "20" }}
+          pb={{ base: "50px", md: "100px" }}
           textAlign="center"
         >
-          <Text fontSize="48px" color="#fff" fontWeight="bold">
-            Cost Estimator
+          <Text
+            fontSize={{ base: "24px", md: "48px" }}
+            color="#fff"
+            fontWeight="bold"
+          >
+            Cost Estimator{" "}
             <Box as="span" color="#EDAB5B">
               Tool
             </Box>
           </Text>
-          <Text color="#fff" fontSize="md" fontWeight="normal">
+          <Text
+            color="#fff"
+            fontSize={{ base: "sm", md: "md" }}
+            fontWeight="normal"
+          >
             Give your home a new look with these interior <br /> design ideas
             curated for you
           </Text>
         </Box>
       </Box>
-      <Box px="10" mt="-35px">
-        <Flex gap="5">
+      <Box px={{ base: "5", md: "10" }} mt="-35px">
+        <Flex display={{ base: "none", md: "flex" }} gap="5">
           <Box w="70%">
             <Flex
               h="fit-content"
@@ -523,16 +536,357 @@ export default function Estimate() {
             </Box>
           </Box>
         </Flex>
+        <Flex
+          flexDir="column"
+          gap="3"
+          shadow="lg"
+          bg="#ffffff"
+          rounded="lg"
+          px="4"
+          py="4"
+        >
+          <EstimateSelectBox
+            label="Select Floors :"
+            optionsList={floorsList}
+            optionName="No of Floors"
+            selectOption={selectedFloor}
+            setOption={setSelectedFloor}
+          />
+          <EstimateSelectBox
+            label="Select Area :"
+            optionsList={areaList}
+            optionName="Area"
+            selectOption={selectedArea}
+            setOption={setSelectedArea}
+          />
+          <EstimateSelectBox
+            label="Select City :"
+            optionsList={cityList}
+            optionName="City"
+            selectOption={selectedCity}
+            setOption={setSelectedCity}
+          />
+        </Flex>
+
+        <Box mt="2" py="4">
+          <Text
+            mb="2"
+            fontSize="20px"
+            fontWeight="semibold"
+            fontFamily="Roboto"
+          >
+            Construction Items
+          </Text>
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={2}
+            onSwiper={(swiper) => {
+              constructionItemsRef.current = swiper;
+            }}
+          >
+            {constructionItems?.map((item, i) => (
+              <SwiperSlide key={i}>
+                <Box
+                  rounded="lg"
+                  role="group"
+                  overflow="hidden"
+                  _hover={{
+                    borderColor: "primary.500",
+                  }}
+                  onClick={() => {
+                    console.log(item, "item");
+                    setSelectedItem(item);
+                  }}
+                  bg="#ffffff"
+                  border="2px solid"
+                  borderColor={
+                    selectedItem?.name === item?.name
+                      ? "primary.500"
+                      : "#22232626"
+                  }
+                >
+                  <Box p="4">
+                    <Image mx="auto" src={`${item.image}`} h="80px" />
+                  </Box>
+                  <Box
+                    py="1"
+                    fontSize={{ base: "sm", md: "md" }}
+                    fontWeight="medium"
+                    fontFamily="Roboto"
+                    color={
+                      selectedItem.name === item.name
+                        ? "#ffffff"
+                        : "secondary.500"
+                    }
+                    textAlign="center"
+                    bg={
+                      selectedItem.name === item.name
+                        ? "primary.500"
+                        : "#f5f5f5"
+                    }
+                    _groupHover={{
+                      borderColor: "primary.500",
+                      color: selectedItem.name !== item.name && "primary.500",
+                    }}
+                    w="full"
+                    borderTop="2px solid"
+                    borderColor={
+                      selectedItem.name === item.name
+                        ? "primary.500"
+                        : "#22232626"
+                    }
+                  >
+                    {item.tag}
+                  </Box>
+                </Box>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <Flex mt="5" gap="5" justifyContent="center">
+            <IconButton
+              bg="#ffffff"
+              color="primary.500"
+              _hover={{
+                bg: "primary.500",
+                color: "#ffffff",
+              }}
+              aria-label="Search database"
+              icon={<ArrowBackIcon h="5" w="5" />}
+              rounded="full"
+              border="2px solid"
+              borderColor="primary.500"
+              onClick={handlePrev}
+            />
+            <IconButton
+              bg="#ffffff"
+              rounded="full"
+              border="2px solid"
+              borderColor="primary.500"
+              _hover={{
+                bg: "primary.500",
+                color: "#ffffff",
+              }}
+              color="primary.500"
+              aria-label="Search database"
+              icon={<ArrowForwardIcon h="5" w="5" />}
+              onClick={handleNext}
+            />
+          </Flex>
+          <Box>
+            <Flex mt="5" gap="5" justifyContent="space-between">
+              <Text
+                mb="2"
+                mt="4"
+                fontSize="20px"
+                fontWeight="semibold"
+                fontFamily="Roboto"
+                textTransform="capitalize"
+              >
+                {selectedItem?.name}
+              </Text>
+              <Box pos="relative" w="fit-content">
+                <IconButton
+                  bg="#ffffff"
+                  color="primary.500"
+                  _hover={{
+                    bg: "primary.500",
+                    color: "#ffffff",
+                  }}
+                  position="relative"
+                  aria-label="Search database"
+                  icon={<CartIcon h="5" w="5" />}
+                  rounded="full"
+                  border="2px solid"
+                  borderColor="primary.500"
+                  onClick={cartModalonOpen}
+                />
+
+                {selectedItemsList.length > 0 && (
+                  <Flex
+                    align="center"
+                    justify="center"
+                    position="absolute"
+                    bg="red"
+                    fontFamily="Roboto"
+                    w="5"
+                    p="4px"
+                    h="5"
+                    top="-8px"
+                    right="-5px"
+                    rounded="full"
+                    color="#fff"
+                  >
+                    <Text fontSize="12px" lineHeight="100%">
+                      {" "}
+                      {selectedItemsList.length}
+                    </Text>
+                  </Flex>
+                )}
+              </Box>
+
+              {/* Cart Items  */}
+              <Modal
+                size="xs"
+                isOpen={cartModalisOpen}
+                onClose={cartModalonClose}
+              >
+                <ModalOverlay />
+                <ModalContent rounded="lg" bg="#ffffff">
+                  <ModalHeader
+                    py="10px"
+                    borderBottom="2px solid"
+                    bg="secondary.500"
+                    borderTopRadius="lg"
+                    fontFamily="Roboto"
+                    color="#ffffff"
+                    fontSize="lg"
+                    fontWeight="medium"
+                    borderColor="#8b8b8b29"
+                    textAlign="center"
+                  >
+                    Selected Items
+                  </ModalHeader>
+                  <ModalCloseButton color="#fff" />
+                  <ModalBody w="full">
+                    {selectedItemsList.length > 0 ? (
+                      <>
+                        {selectedItemsList.map(
+                          ({ name, image }: any, i: number) => (
+                            <Flex
+                              key={i}
+                              py="2"
+                              align="center"
+                              justify="space-between"
+                              borderBottom="1px solid"
+                              borderColor="#22232626"
+                            >
+                              <Box
+                                fontSize="lg"
+                                fontFamily="Roboto"
+                                fontWeight="normal"
+                              >
+                                {name}
+                              </Box>
+                              <Image src={image} w="30px" h="30px" />
+                            </Flex>
+                          )
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        <Image
+                          src="/images/cart.png"
+                          h="250px"
+                          w="250px"
+                          mx="auto"
+                        />
+                        <Text
+                          textAlign="center"
+                          fontSize="lg"
+                          fontWeight="medium"
+                          fontFamily="Roboto"
+                          color="secondary.500"
+                        >
+                          Your Cart is Empty
+                        </Text>
+                        <Text
+                          textAlign="center"
+                          fontSize="sm"
+                          mt="1"
+                          mb="4"
+                          fontWeight="normal"
+                          fontFamily="Roboto"
+                          color="secondary.500"
+                        >
+                          Looks like you have not added anything to your cart go
+                          ahead & explore
+                        </Text>
+                      </>
+                    )}
+                  </ModalBody>
+                  <ModalFooter>
+                    {selectedItemsList.length > 0 && (
+                      <Button
+                        type="submit"
+                        bg="secondary.500"
+                        _hover={{ bg: "secondary.500", color: "#fff" }}
+                        color="#fff"
+                        fontFamily="Roboto"
+                        // onClick={handleFilterAdd}
+                      >
+                        Calculate
+                      </Button>
+                    )}
+                  </ModalFooter>
+                </ModalContent>
+              </Modal>
+            </Flex>
+            <Grid gap="3" templateColumns="repeat(2, 1fr)">
+              {selectedItem?.items.map((element: any, i: number) => (
+                <ProductCard
+                  wrapperProps={{
+                    border: "1px solid",
+                    borderColor: Boolean(
+                      selectedItemsList.filter(
+                        ({ name }: any) => name === element.name
+                      ).length
+                    )
+                      ? "primary.500 !important"
+                      : "#f5f5f5 !important",
+                    color: Boolean(
+                      selectedItemsList.filter(
+                        ({ name }: any) => name === element.name
+                      ).length
+                    )
+                      ? "primary.500 !important"
+                      : "secondary.500 !important",
+                  }}
+                  key={i}
+                  name={element.name}
+                  content={element.content}
+                  image={element.image}
+                  action={
+                    <Button
+                      type="submit"
+                      bg={
+                        Boolean(
+                          selectedItemsList.filter(
+                            ({ name }: any) => name === element.name
+                          ).length
+                        )
+                          ? "primary.500"
+                          : "secondary.500"
+                      }
+                      _hover={{ transform: "scale(1.08)" }}
+                      color="#fff"
+                      // isLoading={isSubmitting}
+                      onClick={() => handleAddItems(element)}
+                      w="full"
+                      mt="5"
+                      leftIcon={
+                        <CartIcon
+                          h={{ base: "4", md: "5" }}
+                          w={{ base: "4", md: "5" }}
+                        />
+                      }
+                      fontSize={{ base: "sm", md: "md" }}
+                      fontFamily="Roboto"
+                    >
+                      {Boolean(
+                        selectedItemsList.filter(
+                          ({ name }: any) => name === element.name
+                        ).length
+                      )
+                        ? "Added"
+                        : "Add"}
+                    </Button>
+                  }
+                />
+              ))}
+            </Grid>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
-}
-function toast(arg0: {
-  title: string;
-  description: string;
-  status: string;
-  duration: number;
-  isClosable: boolean;
-}) {
-  throw new Error("Function not implemented.");
 }
