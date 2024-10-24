@@ -15,8 +15,8 @@ const WhatsAppChat = ({ isOpen, setIsOpen }: any) => {
   const togglePanel = () => {
     setIsOpen(!isOpen);
   };
-  const phoneNumber = "9702914246"; // e.g., '1234567890'
-  const message = "Hello, I have a question about my project."; // Default message
+  const phoneNumber = "9234076909";
+  const message = "Hello, I have a question about my project.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;

@@ -3,25 +3,41 @@ import React from "react";
 import Image from "next/image";
 export default function HeroSection() {
   return (
-    <Box pt={10}>
-      <Flex m="auto" align="center" px="10">
+    <Box pt={{ base: "12", md: 10 }}>
+      <Flex
+        m="auto"
+        align="center"
+        px={{ base: "5", md: "10" }}
+        flexDirection={{ base: "column", md: "row" }}
+      >
         <Box
-          w="50%"
-          borderRight="1px solid"
+          w={{ base: "full", md: "50%" }}
+          borderRight={{ base: "none", md: "1px solid" }}
           borderColor="secondary.400"
-          pr="10"
-          pl="10"
+          pr={{ base: "0", md: "10" }}
+          pl={{ base: "0", md: "10" }}
         >
-          <Text color="secondary.500" fontSize="65px" fontWeight="medium">
-            Build Your Home With Trust
+          <Text
+            color="secondary.500"
+            fontSize={{ base: "38px", md: "65px" }}
+            lineHeight="auto"
+            fontWeight="semibold"
+          >
+            Build Your Dream <Box display={{ base: "none", md: "block" }}></Box>
+            With Trust
           </Text>
         </Box>
-        <Box w="50%" pl="16">
-          <Text>
-            Give your home a new look with these interior <br />
+        <Box
+          mt={{ base: "2", md: "0" }}
+          w={{ base: "full", md: "50%" }}
+          pl={{ base: "0", md: "16" }}
+        >
+          <Text fontSize={{ base: "sm", md: "md" }}>
+            Give your home a new look with these interior{" "}
+            <Box display={{ base: "none", md: "block" }}></Box>
             design ideas curated for you ?
           </Text>
-          <Flex mt="8" gap="5">
+          <Flex mt={{ base: "10", md: "8" }} gap={{ base: "2", md: "5" }}>
             <Button
               color="secondary.600"
               background="contrast.200"
@@ -37,7 +53,7 @@ export default function HeroSection() {
                 color: "contrast.200",
               }}
             >
-              About Us
+              Explore
             </Button>
             <Button
               background="secondary.600"
@@ -59,8 +75,8 @@ export default function HeroSection() {
       </Flex>
       <Flex
         px="10"
-        mt="10"
-        pb="3"
+        mt={{ base: "16", md: "10" }}
+        pb={{ base: "5", md: "3" }}
         justify="center"
         style={{
           background:

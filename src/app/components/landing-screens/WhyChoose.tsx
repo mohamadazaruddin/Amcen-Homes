@@ -11,86 +11,109 @@ export default function WhyChoose() {
     panelProps,
   }: any) => {
     return (
-      <>
-        <Flex gap="4" w="300px" rounded={"md"} p="4" {...wrapperprops}>
-          <Flex
-            align="center"
-            justify="center"
-            p="2"
-            border="10px solid"
-            borderColor="#ffffff"
-            rounded="full"
-            w="85px"
-            h="85px"
-            ml="-60px"
-            {...panelProps}
-          >
-            <Image
-              src={imagesrc}
-              alt=""
-              height={"50px"}
-              width={"50px"}
-              {...imageProps}
-            />
-          </Flex>
-          <Box flex="1">
-            <Text
-              fontSize="md"
-              mt="1"
-              fontWeight="medium"
-              color="secondary.600"
-              fontFamily="Roboto"
-            >
-              {title}
-            </Text>
-            <Text
-              fontSize="sm"
-              mt="2"
-              fontWeight="normal"
-              fontFamily="Roboto"
-              color="secondary.600"
-            >
-              {description}
-            </Text>
-          </Box>
+      <Flex
+        gap="4"
+        w={{ base: "100%", md: "300px" }} // Adjust width for small screens
+        rounded="md"
+        p="4"
+        align="center"
+        {...wrapperprops}
+      >
+        <Flex
+          align="center"
+          justify="center"
+          p="2"
+          border="10px solid"
+          borderColor="#ffffff"
+          rounded="full"
+          w="85px"
+          h="85px"
+          ml={{ base: "0", md: "-60px" }} // Adjust margin for small screens
+          {...panelProps}
+        >
+          <Image
+            src={imagesrc}
+            alt=""
+            height="50px"
+            width="50px"
+            {...imageProps}
+          />
         </Flex>
-      </>
+        <Box flex="1">
+          <Text
+            fontSize={{ base: "md", md: "md" }} // Adjust font size for small screens
+            mt="1"
+            fontWeight="medium"
+            color="secondary.600"
+            fontFamily="Roboto"
+          >
+            {title}
+          </Text>
+          <Text
+            fontSize={{ base: "xs", md: "sm" }} // Keep font size consistent
+            mt="2"
+            fontWeight="normal"
+            fontFamily="Roboto"
+            color="secondary.600"
+          >
+            {description}
+          </Text>
+        </Box>
+      </Flex>
     );
   };
 
   return (
-    <Flex py={20} px={10} justifyContent="space-between">
-      <Flex align="center" w="40%" pr="10">
+    <Flex
+      py={{ base: 10, md: 20 }} // Adjust padding for small screens
+      px={{ base: 5, md: 10 }} // Adjust padding for small screens
+      flexDirection={{ base: "column", md: "row" }} // Stack elements on small screens
+    >
+      <Flex
+        align="center"
+        w={{ base: "100%", md: "40%" }}
+        pr={{ base: "0", md: "10" }}
+      >
         <Box>
-          {" "}
-          <Text fontSize="40px" fontWeight="medium" color="secondary.600">
-            Why to Choose <br /> Amcen Homes ?
+          <Text
+            fontSize={{ base: "34px", md: "40px" }}
+            fontWeight="medium"
+            textAlign={{ base: "center", md: "left" }}
+            color="secondary.600"
+          >
+            Why to Choose <Box display={{ base: "none", md: "block" }}></Box>{" "}
+            Amcen Homes ?
           </Text>
           <Text
-            fontSize="sm"
+            textAlign={{ base: "center", md: "left" }}
+            fontSize={{ base: "xs", md: "sm" }}
             mt={3.5}
             fontWeight="normal"
             color="secondary.600"
           >
-            OUR HOUSE CONSTRUCTION STEPS ARE SIMPLE AND EASY TO UNDERSTAND: PLAN
-            - BUILD - TRACK - SETTLE IN.
+            OUR HOUSE CONSTRUCTION STEPS ARE SIMPLE AND EASY TO UNDERSTAND:{" "}
+            <Box display={{ base: "block", md: "none" }}></Box> PLAN - BUILD -
+            TRACK - SETTLE IN.
           </Text>
         </Box>
       </Flex>
-      <Box w="60%" pl="40px">
+      <Box
+        w={{ base: "100%", md: "60%" }}
+        mt={{ base: "10", md: "0" }}
+        pl={{ base: "0", md: "40px" }}
+      >
         <Grid
           w="fit-content"
-          columnGap="80px"
-          rowGap="10"
+          columnGap={{ base: "20px", md: "80px" }} // Adjust gap for small screens
+          rowGap={{ base: "5", md: "10" }}
           templateColumns={{
-            base: "1fr",
-            md: "repeat(2, 1fr)",
-            lg: "repeat(2, 1fr)",
+            base: "1fr", // Single column on small screens
+            md: "repeat(2, 1fr)", // Two columns on medium and larger screens
           }}
         >
           <AmcenFetures
             imagesrc="/images/card.png"
-            title="Tech Enabled Construction"
+            title="Tech-Driven Build"
             description="3D Modeling, Digital representation of Building"
             wrapperprops={{
               bg: "#ffeda882",

@@ -21,14 +21,13 @@ export default function HomePage() {
   return (
     <div>
       <HeroSection />
-      <div id="about-us">
-        <AboutUs />
-      </div>
+      <div id="about-us">{/* <AboutUs /> */}</div>
       <Services servicesList={servicesList} />
       <EstimateSection />
       <NewLook />
       <WhyChoose />
-      <PriceViewing />
+      {/* <PriceViewing /> */}
+      {/* need to include price in any other section */}
       <OurPortfolio />
       <HowItWorks />
       <Reviews />

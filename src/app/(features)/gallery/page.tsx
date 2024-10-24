@@ -18,13 +18,13 @@ export default function Gallery() {
 
   const mobHeight = [
     "150px",
-    "100px",
-    "120px",
+    "170px",
+    "150px",
     "200px",
-    "120px",
+    "200px",
     "220px",
     "180px",
-    "250px",
+    "200px",
   ];
   return (
     <Box px={{ base: "5", md: "10" }} py={{ base: 5, md: 10 }}>
@@ -94,7 +94,7 @@ export default function Gallery() {
           </Flex>
         </Box>
         <Box w={{ md: "50%" }}>
-          <Flex direction="column" gap="4">
+          <Flex direction="column" gap="2">
             <Image
               rounded="lg"
               src={gallery[3].image}

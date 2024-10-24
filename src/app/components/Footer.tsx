@@ -8,6 +8,7 @@ import InstaIcon from "./Icons/InstaIcon";
 import TwitterIcon from "./Icons/TwitterIcon";
 import WhatsappOutlineIcon from "./Icons/WhatsappOutlineIcon";
 import { useRouter } from "next/navigation";
+import LinkedInIcon from "./Icons/LinkedInIcon";
 
 export default function Footer() {
   const linkStyle = {
@@ -39,14 +40,15 @@ export default function Footer() {
             }}
           />
           <Text color="#ffffff" fontSize="sm" mt="4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-            deleniti modi, rerum id maiores,
+            We specialize in innovative home construction and design, combining
+            quality craftsmanship with modern technology to create beautiful,
+            functional spaces tailored to your needs
           </Text>
           <Flex mt="6" color="#fff" gap="4">
             <FacebookIcon w="6" h="6" cursor="pointer" />
             <InstaIcon w="6" h="6" cursor="pointer" />
             <TwitterIcon w="6" h="6" cursor="pointer" />
-            <WhatsappOutlineIcon w="6" h="6" cursor="pointer" />
+            <LinkedInIcon w="6" h="6" cursor="pointer" />
           </Flex>
         </Box>
 
@@ -60,9 +62,9 @@ export default function Footer() {
             <Text mb="3" fontSize="lg" fontWeight="semibold" color="#EDAB5B">
               Company
             </Text>
-            <Link sx={linkStyle} href="/#about-us">
+            {/* <Link sx={linkStyle} href="/#about-us">
               About Us
-            </Link>
+            </Link> */}
             <Link sx={linkStyle} href="/our-services">
               Our Services
             </Link>
@@ -92,9 +94,9 @@ export default function Footer() {
             <Text mb="3" fontSize="lg" fontWeight="semibold" color="#EDAB5B">
               Resource
             </Text>
-            <Link sx={linkStyle} href="/blogs">
+            {/* <Link sx={linkStyle} href="/blogs">
               Blog
-            </Link>
+            </Link> */}
             <Link sx={linkStyle}>Book an Appointment</Link>
             <Link sx={linkStyle} href="/site-map">
               Site Map
@@ -106,7 +108,7 @@ export default function Footer() {
           <Text mb="5" fontSize="lg" fontWeight="semibold" color="#EDAB5B">
             Company
           </Text>
-          <Flex gap="2" align="center">
+          <Flex gap="4" align="start">
             <Flex
               align="center"
               justify="center"
@@ -118,17 +120,40 @@ export default function Footer() {
             >
               <PhoneIcon h="4" w="4" />
             </Flex>
-            <Link
-              href="tel:+19999999999"
-              color="#ede8e8"
-              fontSize="sm"
-              fontFamily="'Roboto', sans-serif"
-              fontWeight="normal"
-            >
-              +91 98745 63210
-            </Link>
+            <Box>
+              <Link
+                href="tel:+19999999999"
+                color="#ede8e8"
+                display="block"
+                fontSize="sm"
+                fontFamily="'Roboto', sans-serif"
+                fontWeight="normal"
+              >
+                +91 98358 22600
+              </Link>
+              <Link
+                href="tel:+19999999999"
+                color="#ede8e8"
+                fontSize="sm"
+                display="block"
+                fontFamily="'Roboto', sans-serif"
+                fontWeight="normal"
+              >
+                +91 77600 41102
+              </Link>
+              <Link
+                href="tel:+19999999999"
+                color="#ede8e8"
+                display="block"
+                fontSize="sm"
+                fontFamily="'Roboto', sans-serif"
+                fontWeight="normal"
+              >
+                +91 82358 47080
+              </Link>
+            </Box>
           </Flex>
-          <Flex mt="4" gap="2" align="center">
+          <Flex mt="4" gap="4" align="center">
             <Flex
               align="center"
               justify="center"
@@ -141,16 +166,16 @@ export default function Footer() {
               <EmailIcon h="4" w="4" />
             </Flex>
             <Link
-              href="mailto:example@example.com?subject=Inquiry&body=Hello%20there!"
+              href="mailto:amcen2006@gmail.com?subject=Inquiry&body=Hello%20there!"
               color="#ede8e8"
               fontSize="sm"
               fontFamily="'Roboto', sans-serif"
               fontWeight="normal"
             >
-              amcenhome@gmail.com
+              amcen2006@gmail.com
             </Link>
           </Flex>
-          <Flex mt="4" gap="2">
+          <Flex mt="4" gap="4">
             <Flex
               align="center"
               justify="center"

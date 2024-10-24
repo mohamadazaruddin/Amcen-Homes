@@ -46,11 +46,11 @@ export default function Header({ name }: HeaderProps) {
       href: "/our-services",
       url: "/our-services",
     },
-    {
-      pageName: "Blogs",
-      href: "/blogs",
-      url: "/blogs",
-    },
+    // {
+    //   pageName: "Blogs",
+    //   href: "/blogs",
+    //   url: "/blogs",
+    // },
     {
       pageName: "Our Gallery",
       href: "/gallery",

@@ -1,53 +1,52 @@
 {
   "servicesList": [
     {
-      "name": "Open Space design",
+      "name": "Open Space Design",
       "id": 1,
       "image": "/images/gallery/open_space.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+      "content": "Creating open spaces that promote comfort and functionality, this service focuses on maximizing natural light and flow, resulting in a harmonious living environment that enhances your lifestyle."
     },
     {
       "name": "Modular Kitchen",
       "id": 2,
       "image": "/images/gallery/kitchen.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+      "content": "Transform your cooking area with a modular kitchen designed for efficiency and style. We focus on innovative layouts and high-quality materials, ensuring a space that's both functional and aesthetically pleasing."
     },
     {
       "name": "Residential Building",
       "id": 3,
       "image": "/images/gallery/residential_interiors.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+      "content": "From concept to completion, we specialize in designing residential buildings that reflect your vision. Our approach combines architectural integrity with modern comforts, creating spaces that feel like home."
     },
-
     {
       "name": "Front Elevation Designs",
       "id": 5,
       "image": "/images/gallery/front_elevation.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+      "content": "Make a lasting impression with our front elevation designs. We craft stunning facades that enhance curb appeal and showcase your personal style while considering architectural trends and local aesthetics."
     },
     {
       "name": "Interior Designing",
       "id": 6,
       "image": "/images/gallery/interiors.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+      "content": "Our interior design services focus on creating inviting and functional spaces tailored to your lifestyle. We blend aesthetics with practicality, ensuring every room reflects your personality and enhances comfort."
     },
     {
       "name": "Home Renovation",
       "id": 4,
       "image": "/images/gallery/home_renovation.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+      "content": "Revitalize your home with our renovation services. Whether updating a single room or a complete overhaul, we prioritize your needs, integrating modern design elements to breathe new life into your space."
     },
     {
       "name": "Warehouses Construction",
       "id": 8,
       "image": "/images/gallery/warehouse.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+      "content": "We provide comprehensive warehouse construction services, focusing on functionality and efficiency. Our designs are tailored to meet industry standards while ensuring optimal space utilization for your operations."
     },
     {
       "name": "Commercial Construction",
       "id": 9,
       "image": "/images/gallery/commercial_interiors.png",
-      "content": "Designing and constructing a residential building involves planning and creating a structure that provides a comfortable pleasing living environment."
+      "content": "Our commercial construction services cater to businesses looking to create functional and attractive workspaces. We manage every aspect of the project, ensuring timely delivery without compromising quality."
     }
   ],
   "faqs": [
@@ -706,9 +705,12 @@
     { "name": "2501-3000 sq ft", "value": "2501-3000" }
   ],
   "cityList": [
-    { "name": "Mumbai", "value": "mumbai" },
-    { "name": "Delhi", "value": "delhi" },
-    { "name": "Bangalore", "value": "bangalore" },
-    { "name": "Chennai", "value": "chennai" }
+    { "name": "Patna", "value": "patna" },
+    { "name": "Muzafarpur", "value": "muzafarpur" },
+    { "name": "Hajipur", "value": "hajipur" },
+    { "name": "Gorakpur", "value": "gorakpur" },
+    { "name": "Siwan", "value": "siwan" },
+    { "name": "Pune", "value": "pune" },
+    { "name": "Delhi Ncr", "value": "delhi_ncr" }
   ]
 }

@@ -42,24 +42,52 @@ export default function ContactUs() {
   });
 
   return (
-    <Box px="10" py="60px">
+    <Box px={{ base: "5", md: "10" }} py="60px">
       <Box textAlign="center">
         <Text fontSize="lg" fontWeight="normal" color="#494848">
           Get in touch with us
         </Text>
-        <Text fontSize="40px" fontWeight="medium" color="secondary.600">
+        <Text
+          fontSize={{ base: "32px", md: "40px" }}
+          fontWeight="medium"
+          color="secondary.600"
+        >
           Contact Us
         </Text>
       </Box>
-      <Flex gap="10" px="10" mt="10" h="full">
-        <Box w="50%" p="5" bg="#1A1E23" rounded="lg" shadow="lg">
+      <Flex
+        gap="10"
+        px={{ base: "0", md: "10" }}
+        mt={{ base: "5", md: "10" }}
+        h="full"
+        flexDirection={{ base: "column-reverse", md: "row" }}
+      >
+        <Box
+          w={{ base: "100%", md: "50%" }}
+          p={{ base: "1", md: "5" }}
+          bg="#1A1E23"
+          rounded="lg"
+          shadow="lg"
+          h={{ base: "300px", md: "auto" }}
+        >
           <Map />
         </Box>
-        <Box w="50%" pl="10">
-          <Text fontSize="24px" fontWeight="medium" color="secondary.500">
+        <Box w={{ base: "100%", md: "50%" }} pl={{ base: "0", md: "10" }}>
+          <Text
+            fontSize={{ base: "20px", md: "24px" }}
+            textAlign={{ base: "center", md: "left" }}
+            fontWeight="medium"
+            color="secondary.500"
+          >
             Leave Your Message
           </Text>
-          <Text fontSize="sm" fontWeight="medium" color="secondary.500" mb="5">
+          <Text
+            textAlign={{ base: "center", md: "left" }}
+            fontSize="sm"
+            fontWeight="medium"
+            color="secondary.500"
+            mb="5"
+          >
             Feel free to contact with us by using the form below
           </Text>
 

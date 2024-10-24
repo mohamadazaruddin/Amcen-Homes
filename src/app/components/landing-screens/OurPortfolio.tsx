@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import SimpleSlider from "../ReactSlick";
 import SwiperSlider from "../Swiper";
@@ -11,23 +11,33 @@ export default function OurPortfolio() {
   };
   const viewIndex = 2;
   const portfolioImages = [
-    { img: "/images/works/image1.png", label: "Home Renovation" },
-    { img: "/images/works/image2.png", label: "Home Renovation" },
-    { img: "/images/works/image5.png", label: "Home Renovation" },
-    { img: "/images/works/image4.png", label: "Home Renovation" },
-    { img: "/images/works/image3.png", label: "Home Renovation" },
+    { img: "/images/works/image1.png", label: "Office Interiors" },
+    { img: "/images/works/image2.png", label: "Residental Interiors" },
+    { img: "/images/works/image5.png", label: "Interior Design", col: 2 },
+    { img: "/images/works/image4.png", label: "Open Space Design" },
+    { img: "/images/works/image3.png", label: "Shop Design" },
   ];
   return (
-    <Box py="100px" w="full">
+    <Box py={{ base: "20px", md: "100px" }} w="full">
       <Box textAlign="center">
         <Text fontSize="lg" fontWeight="normal" color="#494848">
           Best Works
         </Text>
-        <Text fontSize="40px" fontWeight="medium" color="secondary.600">
+        <Text
+          fontSize={{ base: "32px", md: "40px" }}
+          fontWeight="medium"
+          color="secondary.600"
+        >
           Our Portfolio
         </Text>
       </Box>
-      <Flex h="500px" mx="20" mt={"5"} gap="2">
+      <Flex
+        display={{ base: "none", md: "flex" }}
+        h="500px"
+        mx="20"
+        mt={"5"}
+        gap="2"
+      >
         {portfolioImages.map(({ img, label }, i) => (
           <Box
             key={i}
@@ -52,8 +62,12 @@ export default function OurPortfolio() {
               }}
               transition="0.3s linear"
               bottom="40px"
+              shadow="0px 0px 23px 17px #00000038"
               right="20px"
               bg="#fff"
+              fontSize="lg"
+              fontWeight="medium"
+              color="#000"
               p="2"
               rounded="base"
             >
@@ -62,6 +76,44 @@ export default function OurPortfolio() {
           </Box>
         ))}
       </Flex>
+      <Grid
+        display={{ base: "grid", md: "none" }}
+        templateColumns="repeat(2, 1fr)"
+        px={{ base: "5", md: "0" }}
+        gap="3"
+        mt="10"
+      >
+        {portfolioImages.map(({ img, label, col }, i) => (
+          <GridItem
+            key={i}
+            w={"full"}
+            sx={bgStyles}
+            backgroundImage={`url('${img}')`}
+            role="group"
+            colSpan={col}
+            h="180px"
+            rounded="md"
+            position="relative"
+          >
+            <Box
+              position="absolute"
+              transition="0.3s linear"
+              bottom="10px"
+              shadow="0px 0px 23px 17px #00000038"
+              right="8px"
+              bg="#fff"
+              textTransform="capitalize"
+              fontSize={{ base: "xs", md: "lg" }}
+              fontWeight={{ base: "semibold", md: "medium" }}
+              color="#000"
+              p="1"
+              rounded="base"
+            >
+              {label}
+            </Box>
+          </GridItem>
+        ))}
+      </Grid>
     </Box>
   );
 }
