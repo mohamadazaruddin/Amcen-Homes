@@ -22,8 +22,9 @@ export default function AboutUs() {
           <Text fontSize="sm" mt={4} fontWeight="normal" color="secondary.600">
             Welcome to our website, where we bring dreams to life by
             constructing the perfect homes for our clients. At [Your Company
-            Name], we understand that a home is more than just a structure—it's
-            a reflection of your dreams, aspirations, and lifestyle.{" "}
+            Name]&apos; we understand that a home is more than just a
+            structure—it&apos;s a reflection of your dreams, aspirations, and
+            lifestyle.{" "}
           </Text>
           <Text
             fontSize="sm"
@@ -35,9 +36,9 @@ export default function AboutUs() {
             your expectations and bring your vision to reality. With a focus on
             attention to detail, quality craftsmanship, and innovative design,
             we work closely with each client to understand their unique
-            preferences and requirements. Whether you're looking for a modern,
-            minimalist sanctuary or a cozy, traditional haven, we have the
-            expertise and resources to bring your dream house to life.
+            preferences and requirements. Whether you&apos;re looking for a
+            modern, minimalist sanctuary or a cozy, traditional haven, we have
+            the expertise and resources to bring your dream house to life.
           </Text>
           <Button
             background="secondary.600"

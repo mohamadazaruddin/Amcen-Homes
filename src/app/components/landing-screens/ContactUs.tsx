@@ -8,13 +8,19 @@ import {
   FormControl,
   FormLabel,
   FormErrorMessage,
+  useToast,
 } from "@chakra-ui/react";
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Map from "../Map";
+import ky from "ky";
+import SlideInFromTop from "../Animations/SlideFromTop";
+import SlideInFromLeft from "../Animations/SlideInFromLeft";
+import SlideInFromRight from "../Animations/SlideInFromRight";
 
 export default function ContactUs() {
+  const toast = useToast();
   // Formik setup with validation using Yup
   const formik = useFormik({
     initialValues: {
@@ -35,54 +41,97 @@ export default function ContactUs() {
         .required("Phone number is required"),
       enquiry: Yup.string().required("Please enter your message"),
     }),
-    onSubmit: (values) => {
+    onSubmit: async (values, { resetForm }) => {
       console.log("Form values:", values);
-      // Handle form submission logic here (e.g., send data to API)
+      const sendParams = {
+        name: values.name,
+        email: values.email,
+        phone: values.phone,
+        query: values.enquiry,
+        queryType: "Enquiry",
+        service: "",
+      };
+      try {
+        const response = await ky
+          .post(`/api/add-queries`, { json: sendParams })
+          .json();
+
+        if (response) {
+          toast({
+            description: "Details Sent Successfully",
+            status: "success",
+            isClosable: true,
+            variant: "left-accent",
+            position: "bottom",
+            duration: 4000,
+          });
+          resetForm();
+        }
+      } catch (error) {
+        toast({
+          description: "An error occurred. Please try again later.",
+          status: "error",
+          isClosable: true,
+          variant: "left-accent",
+          position: "bottom",
+          duration: 4000,
+        });
+      }
     },
   });
 
   return (
-    <Box px={{ base: "5", md: "10" }} py="60px">
-      <Box textAlign="center">
-        <Text fontSize="lg" fontWeight="normal" color="#494848">
-          Get in touch with us
-        </Text>
-        <Text
-          fontSize={{ base: "32px", md: "40px" }}
-          fontWeight="medium"
-          color="secondary.600"
-        >
-          Contact Us
-        </Text>
-      </Box>
+    <Box px={{ base: "5", md: "10", lg: "10" }} py="60px">
+      <SlideInFromTop>
+        <Box textAlign="center">
+          <Text fontSize="lg" fontWeight="normal" color="#494848">
+            Get in touch with us
+          </Text>
+          <Text
+            fontSize={{ base: "32px", md: "32px", lg: "40px" }} // Same for mobile and tablet
+            fontWeight="medium"
+            color="secondary.600"
+          >
+            Contact Us
+          </Text>
+        </Box>
+      </SlideInFromTop>
       <Flex
         gap="10"
-        px={{ base: "0", md: "10" }}
-        mt={{ base: "5", md: "10" }}
+        px={{ base: "0", md: "0", lg: "10" }} // Adjusted for tablet
+        mt={{ base: "5", md: "5", lg: "10" }} // Same for mobile and tablet
         h="full"
-        flexDirection={{ base: "column-reverse", md: "row" }}
+        flexDirection={{
+          base: "column-reverse",
+          md: "column-reverse",
+          lg: "row",
+        }} // Stack on small and tablet screens
       >
         <Box
-          w={{ base: "100%", md: "50%" }}
-          p={{ base: "1", md: "5" }}
+          w={{ base: "100%", md: "100%", lg: "50%" }} // Same for mobile and tablet
+          p={{ base: "1", md: "1", lg: "5" }} // Same for mobile and tablet
           bg="#1A1E23"
           rounded="lg"
           shadow="lg"
-          h={{ base: "300px", md: "auto" }}
+          h={{ base: "300px", md: "500px", lg: "auto" }} // Same for mobile and tablet
         >
           <Map />
         </Box>
-        <Box w={{ base: "100%", md: "50%" }} pl={{ base: "0", md: "10" }}>
+
+        <Box
+          w={{ base: "100%", md: "100%", lg: "50%" }}
+          pl={{ base: "0", md: "0", lg: "10" }}
+        >
           <Text
-            fontSize={{ base: "20px", md: "24px" }}
-            textAlign={{ base: "center", md: "left" }}
+            fontSize={{ base: "20px", md: "20px", lg: "24px" }} // Same for mobile and tablet
+            textAlign={{ base: "center", md: "center", lg: "left" }} // Center on mobile and tablet
             fontWeight="medium"
             color="secondary.500"
           >
             Leave Your Message
           </Text>
           <Text
-            textAlign={{ base: "center", md: "left" }}
+            textAlign={{ base: "center", md: "center", lg: "left" }} // Center on mobile and tablet
             fontSize="sm"
             fontWeight="medium"
             color="secondary.500"

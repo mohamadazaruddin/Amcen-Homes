@@ -24,7 +24,7 @@ interface FormValues {
   username: string;
   email: string;
   phoneNumber: string;
-  projectDetails: string;
+  feedBack: string;
 }
 const validationSchema = Yup.object({
   username: Yup.string().required("Username is required"),
@@ -34,22 +34,16 @@ const validationSchema = Yup.object({
   phoneNumber: Yup.string()
     .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits")
     .required("Phone number is required"),
-  projectDetails: Yup.string().required("Project details are required"),
+  feedBack: Yup.string().required("Feedback is required"),
 });
 
-export default function ConsultForm({
-  isOpen,
-  onClose,
-  serviceName,
-  estimate,
-  construction_items,
-}: any) {
+export default function FeedBackForm({ isOpen, onClose }: any) {
   const toast = useToast();
   const initialValues: FormValues = {
     username: "",
     email: "",
     phoneNumber: "",
-    projectDetails: "",
+    feedBack: "",
   };
   const labelStyle = {
     fontSize: "md",
@@ -57,7 +51,6 @@ export default function ConsultForm({
     fontFamily: "Roboto",
     mb: "0",
   };
-
   return (
     <>
       <Modal
@@ -81,7 +74,7 @@ export default function ConsultForm({
             fontWeight="medium"
             borderColor="#8b8b8b29"
           >
-            Raise a Request
+            FeedBack
           </ModalHeader>
           <ModalCloseButton color="#ffffff" />
           <ModalBody>
@@ -94,11 +87,9 @@ export default function ConsultForm({
                   name: values.username,
                   email: values.email,
                   phone: values.phoneNumber,
-                  query: values.projectDetails,
-                  queryType: "Appointment",
-                  service: serviceName,
-                  estimatedCost: estimate,
-                  constructionItems: construction_items,
+                  query: values.feedBack,
+                  queryType: "FeedBack",
+                  service: "",
                 };
                 try {
                   const response = await ky
@@ -107,7 +98,7 @@ export default function ConsultForm({
 
                   if (response) {
                     toast({
-                      description: "Details Sent Successfully",
+                      description: "Feedback Sent Successfully",
                       status: "success",
                       isClosable: true,
                       variant: "left-accent",
@@ -195,24 +186,23 @@ export default function ConsultForm({
                     )}
                   </Field>
 
-                  <Field name="projectDetails">
+                  <Field name="feedBack">
                     {({ field, form }: any) => (
                       <FormControl
                         mt={4}
                         isInvalid={
-                          form.errors.projectDetails &&
-                          form.touched.projectDetails
+                          form.errors.feedBack && form.touched.feedBack
                         }
                       >
-                        <FormLabel sx={labelStyle}>Project Details</FormLabel>
+                        <FormLabel sx={labelStyle}>FeedBack</FormLabel>
                         <Textarea
                           rows={5}
                           resize="none"
                           {...field}
-                          placeholder="Details of your project..."
+                          placeholder="Your Feedback..."
                         />
                         <FormErrorMessage>
-                          {form.errors.projectDetails}
+                          {form.errors.feedBack}
                         </FormErrorMessage>
                       </FormControl>
                     )}

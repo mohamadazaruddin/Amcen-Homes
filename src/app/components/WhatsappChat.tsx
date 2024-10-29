@@ -11,7 +11,8 @@ import {
 } from "@chakra-ui/react";
 import WhatsappOutlineIcon from "./Icons/WhatsappOutlineIcon";
 
-const WhatsAppChat = ({ isOpen, setIsOpen }: any) => {
+const WhatsAppChat = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const togglePanel = () => {
     setIsOpen(!isOpen);
   };

@@ -16,178 +16,118 @@ export default function PrivacyPolicy() {
         Privacy Policy
       </Text>
       <Text mb="4">
-        Welcome to <strong>Amcen Homes</strong>! These terms and conditions
-        outline the rules and regulations for using our website and services. By
+        Welcome to <strong>Amcen Homes</strong>! Your privacy is important to
+        us. This Privacy Policy explains how we collect, use, and protect your
+        personal information when you visit our website or use our services. By
         accessing our website at{" "}
         <Link color="primary.500" href="#" fontWeight="bold">
           www.amcenhomes.com
         </Link>
-        , you agree to be bound by these terms. If you do not agree with any
-        part of the terms, please do not use our website.
+        , you agree to the terms of this policy.
       </Text>
 
       <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        1. Introduction
+        1. Information We Collect
       </Text>
       <UnorderedList mb="4" pl="6">
         <ListItem>
-          <strong>Amcen Homes</strong> ("we," "us," "our") provides
-          construction, renovation, and interior design services through our
-          website.
+          <strong>Personal Identification Information:</strong> We may collect
+          personal information such as your name, email address, phone number,
+          and address when you interact with our services.
         </ListItem>
         <ListItem>
-          These terms apply to all visitors, users, and others who access or use
-          our services.
+          <strong>Non-Personal Identification Information:</strong> We may also
+          collect non-personal information about you whenever you interact with
+          our website.
         </ListItem>
       </UnorderedList>
 
       <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        2. Services
-      </Text>
-      <Text mb="4">
-        Our services include various construction and interior design offerings
-        as detailed on our website, including but not limited to:
-      </Text>
-      <UnorderedList mb="4" pl="6">
-        <ListItem>Residential Interiors</ListItem>
-        <ListItem>Modular Kitchens</ListItem>
-        <ListItem>Bathroom Design</ListItem>
-        <ListItem>Office Space Designing</ListItem>
-        <ListItem>And other related services.</ListItem>
-      </UnorderedList>
-
-      <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        3. User Responsibilities
+        2. How We Use Your Information
       </Text>
       <UnorderedList mb="4" pl="6">
         <ListItem>
-          Users must provide accurate and complete information when making
-          inquiries, bookings, or contacting us through the website.
+          To improve customer service and respond to user inquiries.
         </ListItem>
         <ListItem>
-          You are responsible for keeping your account details and other
-          sensitive information secure.
+          To personalize user experience based on how you use our services.
+        </ListItem>
+        <ListItem>To process transactions and send you confirmations.</ListItem>
+        <ListItem>
+          To send periodic emails about your order or other products and
+          services.
         </ListItem>
       </UnorderedList>
 
       <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        4. Bookings and Appointments
-      </Text>
-      <UnorderedList mb="4" pl="6">
-        <ListItem>
-          Bookings and service appointments are subject to our availability and
-          confirmation.
-        </ListItem>
-        <ListItem>
-          We reserve the right to accept or decline any booking request.
-        </ListItem>
-        <ListItem>
-          Payment terms and conditions will be provided during the booking
-          process.
-        </ListItem>
-      </UnorderedList>
-
-      <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        5. Intellectual Property
+        3. How We Protect Your Information
       </Text>
       <Text mb="4">
-        The content, images, logos, and other materials on this website are the
-        property of <strong>[Your Company Name]</strong>. You may not use,
-        reproduce, or distribute any part of our website content without our
-        prior written consent.
+        We implement appropriate data collection, storage, and processing
+        practices and security measures to protect against unauthorized access,
+        alteration, disclosure, or destruction of your personal information,
+        username, password, transaction information, and data stored on our
+        site.
       </Text>
 
       <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        6. User Content
-      </Text>
-      <UnorderedList mb="4" pl="6">
-        <ListItem>
-          Users may be allowed to post reviews, comments, or inquiries on our
-          website.
-        </ListItem>
-        <ListItem>
-          By posting content, you grant us a non-exclusive, royalty-free, and
-          perpetual right to use, modify, and display such content.
-        </ListItem>
-        <ListItem>
-          We reserve the right to remove any content that we deem inappropriate
-          or offensive.
-        </ListItem>
-      </UnorderedList>
-
-      <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        7. Limitation of Liability
+        4. Sharing Your Information
       </Text>
       <Text mb="4">
-        <strong>[Your Company Name]</strong> is not liable for any damages or
-        losses arising from the use or inability to use our website or services.
-        We are not responsible for any inaccuracies or typographical errors in
-        the information provided on the website.
+        We do not sell, trade, or rent your personal identification information
+        to others. We may share generic aggregated demographic information not
+        linked to any personal identification information with our business
+        partners for the purposes outlined above.
       </Text>
 
       <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        8. Third-Party Links
+        5. Third-Party Websites
       </Text>
       <Text mb="4">
-        Our website may contain links to third-party websites or services. We do
-        not endorse or assume responsibility for the content or practices of any
-        third-party websites.
+        Our website may contain links to third-party websites. We do not control
+        the content or practices of these websites and are not responsible for
+        their privacy policies.
       </Text>
 
       <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        9. Privacy Policy
+        6. Your Rights
       </Text>
       <Text mb="4">
-        Your privacy is important to us. Please refer to our{" "}
-        <Link color="blue.500" href="#">
-          Privacy Policy
-        </Link>{" "}
-        for details on how we collect, use, and protect your personal
-        information.
+        You have the right to access, correct, or delete your personal
+        information. If you wish to exercise these rights, please contact us
+        using the information provided below.
       </Text>
 
       <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        10. Changes to Terms
-      </Text>
-      <UnorderedList mb="4" pl="6">
-        <ListItem>
-          We reserve the right to update or modify these terms at any time
-          without prior notice.
-        </ListItem>
-        <ListItem>
-          Continued use of our website after any changes indicates your
-          acceptance of the new terms.
-        </ListItem>
-      </UnorderedList>
-
-      <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        11. Governing Law
+        7. Changes to This Privacy Policy
       </Text>
       <Text mb="4">
-        These terms shall be governed and construed in accordance with the laws
-        of <strong>[Your Country/State]</strong>. Any disputes arising out of
-        these terms will be resolved in the courts of{" "}
-        <strong>[Your Country/State]</strong>.
+        We may update this Privacy Policy from time to time. When we do, we will
+        revise the date at the top of this page. We encourage you to review this
+        policy periodically.
       </Text>
 
       <Text fontSize="xl" fontWeight="semibold" mt="6" mb="2">
-        12. Contact Us
+        8. Contact Us
       </Text>
       <Text mb="4">
-        If you have any questions about these terms, please contact us at:
+        If you have any questions about this Privacy Policy, please contact us
+        at:
       </Text>
       <UnorderedList mb="4" pl="6">
         <ListItem>
           <strong>Email:</strong>{" "}
-          <Link color="blue.500" href="mailto:your-email@example.com">
-            your-email@example.com
+          <Link color="blue.500" href="mailto:amcen2006@gmail.com">
+            amcen2006@gmail.com
           </Link>
         </ListItem>
         <ListItem>
-          <strong>Phone:</strong> [Your Contact Number]
+          <strong>Phone:</strong> +91 98358 22600 / +91 77600 41102 / +91 82358
+          47080
         </ListItem>
         <ListItem>
-          <strong>Address:</strong> [Your Business Address]
+          <strong>Address:</strong> Amcen Homes, Near Blue Dart Warehouse,
+          By-Pass Thana, Tent City Road, Patna, Bihar, 800009
         </ListItem>
       </UnorderedList>
     </Box>

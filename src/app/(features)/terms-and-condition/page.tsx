@@ -32,9 +32,9 @@ export default function TermsAndConditions() {
       </Text>
       <UnorderedList mb="4" pl="6">
         <ListItem>
-          <strong>Amcen Homes</strong> ("we," "us," "our") provides
-          construction, renovation, and interior design services through our
-          website.
+          <strong>Amcen Homes</strong> (&quot;we,&quot; &quot;us,&quot;
+          &quot;our&quot;) provides construction, renovation, and interior
+          design services through our website.
         </ListItem>
         <ListItem>
           These terms apply to all visitors, users, and others who access or use
@@ -181,14 +181,16 @@ export default function TermsAndConditions() {
         <ListItem>
           <strong>Email:</strong>{" "}
           <Link color="blue.500" href="mailto:your-email@example.com">
-            your-email@example.com
+            amcen2006@gmail.com
           </Link>
         </ListItem>
         <ListItem>
-          <strong>Phone:</strong> [Your Contact Number]
+          <strong>Phone:</strong> +91 98358 22600 / +91 77600 41102 / +91 82358
+          47080
         </ListItem>
         <ListItem>
-          <strong>Address:</strong> [Your Business Address]
+          <strong>Address:</strong> Amcen Homes, Near Blue dart Warehouse,
+          by-pass thana, Tent city road, Patna, Bihar, 800009
         </ListItem>
       </UnorderedList>
     </Box>

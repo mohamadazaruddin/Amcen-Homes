@@ -11,7 +11,7 @@ export default function AppLogo({
 }: appLogoProps) {
   const { push } = useRouter();
   return (
-    <Flex gap={2.5} align="center" onClick={() => push("/")}>
+    <Flex gap={2.5} align="center" onClick={() => push("/")} cursor="pointer">
       <Image
         alt=""
         src="/images/appLogo.png"

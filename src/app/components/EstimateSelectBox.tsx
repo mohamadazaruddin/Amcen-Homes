@@ -48,7 +48,7 @@ const EstimateSelectBox = ({
         >
           {selectOption ? selectOption : optionName}
         </MenuButton>
-        <MenuList>
+        <MenuList zIndex={99}>
           {optionsList.map((option: any, index: number) => (
             <MenuItem
               key={index}

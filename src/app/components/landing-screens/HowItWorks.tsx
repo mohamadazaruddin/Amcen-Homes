@@ -9,54 +9,63 @@ import {
   Button,
 } from "@chakra-ui/react";
 import React from "react";
+import SlideInFromLeft from "../Animations/SlideInFromLeft";
+import SlideInFromTop from "../Animations/SlideFromTop";
+import SlideInFromRight from "../Animations/SlideInFromRight";
+import SlideInFromBottom from "../Animations/SlideInFromBottom";
 
 export default function HowItWorks() {
   const StepNumber = ({ step }: any) => {
     return (
-      <Flex
-        h="40px"
-        w="40px"
-        rounded="full"
-        border="1px solid"
-        alignItems="center"
-        fontSize="32px"
-        color="#373737"
-        borderColor="#373737"
-        justifyContent="center"
-      >
-        <Box as="span" mt="-8px">
-          {step}
-        </Box>
-      </Flex>
+      <SlideInFromTop>
+        <Flex
+          h="40px"
+          w="40px"
+          rounded="full"
+          border="1px solid"
+          alignItems="center"
+          fontSize="32px"
+          color="#373737"
+          borderColor="#373737"
+          justifyContent="center"
+        >
+          <Box as="span" mt="-8px">
+            {step}
+          </Box>
+        </Flex>
+      </SlideInFromTop>
     );
   };
 
   const StepContent = ({ title, description, cta, wrapperProps }: any) => {
     return (
       <Box {...wrapperProps}>
-        <Heading fontSize="18px" color="#373737">
-          {title}
-        </Heading>
-        <Text fontSize="14px" color="#373737">
-          {description}
-        </Text>
-        {cta && cta}
+        <SlideInFromLeft delay={0.2}>
+          <Heading fontSize="18px" color="#373737">
+            {title}
+          </Heading>
+          <Text fontSize="14px" color="#373737">
+            {description}
+          </Text>
+          {cta && cta}
+        </SlideInFromLeft>
       </Box>
     );
   };
   return (
     <Box py="60px" px={{ base: "5", md: "10" }}>
-      <Text
-        fontSize="40px"
-        textAlign={{ base: "center", md: "left" }}
-        fontWeight="medium"
-        color="secondary.600"
-      >
-        How it Works ?
-      </Text>
-
+      <SlideInFromLeft>
+        <Text
+          fontSize="40px"
+          textAlign={{ base: "center", md: "left" }}
+          fontWeight="medium"
+          color="secondary.600"
+        >
+          How it Works ?
+        </Text>
+      </SlideInFromLeft>
       <Grid
-        display={{ base: "none", md: "grid" }}
+        display={{ base: "none", md: "none", lg: "grid" }}
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(5, 1fr)"
         gap={4}
@@ -71,12 +80,14 @@ export default function HowItWorks() {
         >
           <Box>
             <StepNumber step={1} />
+
             <StepContent
               title="Raise a request"
               description="Raise a house construction service request. Our team will get in touch with you to understand your requirements in more detail."
               wrapperProps={{ mt: "8" }}
             />
           </Box>
+
           <Image src="/images/steps/meet.png" h="150px" w="150px" />
         </GridItem>
         <GridItem
@@ -174,8 +185,8 @@ export default function HowItWorks() {
                 <>
                   The last and final stage. We make sure you are well settled in
                   your newly built home. <br />
-                  Our journey together doesn't end here. We provide 10 years of
-                  warranty.
+                  Our journey together doesn&apos;t end here. We provide 10
+                  years of warranty.
                 </>
               }
               cta={
@@ -206,7 +217,7 @@ export default function HowItWorks() {
       <Grid
         gap={4}
         mt="10"
-        display={{ base: "grid", md: "none" }}
+        display={{ base: "grid", md: "grid", lg: "none" }}
         templateColumns="repeat(1, 1fr)"
       >
         <Box bg="#F8F4F3" p={5} rounded="sm">

@@ -5,11 +5,10 @@ import Footer from "../components/Footer";
 import WhatsAppChat from "../components/WhatsappChat";
 
 export default function layout({ children }: { children: React.ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <Header name={`Amcen homes`} />
-      <WhatsAppChat isOpen={isOpen} setIsOpen={setIsOpen} />
+      <WhatsAppChat />
       {children}
       <Footer />
     </div>

@@ -1,6 +1,12 @@
+"use client";
 import { Box, Heading, Text, Grid, Image, Flex } from "@chakra-ui/react";
 import React from "react";
 import { gallery } from "../../../../public/content.json";
+import SlideInFromTop from "@/app/components/Animations/SlideFromTop";
+import SlideInFromLeft from "@/app/components/Animations/SlideInFromLeft";
+import SlideInFromBottom from "@/app/components/Animations/SlideInFromBottom";
+import SlideInFromRight from "@/app/components/Animations/SlideInFromRight";
+import Reveal from "@/app/components/Animations/Reveal";
 
 export default function Gallery() {
   const heights = [
@@ -28,70 +34,74 @@ export default function Gallery() {
   ];
   return (
     <Box px={{ base: "5", md: "10" }} py={{ base: 5, md: 10 }}>
-      <Heading
-        textAlign="center"
-        color="primary.500"
-        mt={{ base: "0", md: "6" }}
-        fontSize={{ base: "32px", md: "48px" }}
-      >
-        <Box as="span" color="secondary.500">
-          Our{" "}
+      <SlideInFromTop>
+        <Heading
+          textAlign="center"
+          color="primary.500"
+          mt={{ base: "0", md: "6" }}
+          fontSize={{ base: "32px", md: "48px" }}
+        >
+          <Box as="span" color="secondary.500">
+            Our{" "}
+          </Box>
+          Gallery
+        </Heading>
+        <Box
+          fontSize={{ base: "sm", md: "md" }}
+          color="secondary.500"
+          textAlign="center"
+          mt="2"
+        >
+          Explore our gallery of architectural designs, craftsmanship, and
+          construction progress—capturing{" "}
+          <Box display={{ base: "inline", md: "block" }}></Box> the journey from
+          plans to finished spaces.
         </Box>
-        Gallery
-      </Heading>
-      <Text
-        fontSize={{ base: "sm", md: "md" }}
-        color="secondary.500"
-        textAlign="center"
-        mt="2"
-      >
-        Explore our gallery of architectural designs, craftsmanship, and
-        construction progress—capturing{" "}
-        <Box display={{ base: "inline", md: "block" }}></Box> the journey from
-        plans to finished spaces.
-      </Text>
+      </SlideInFromTop>
 
       {/* mobile view  */}
       <Flex gap="2" my="10" display={{ base: "flex", md: "none" }}>
         <Box w={{ md: "50%" }}>
-          <Flex direction="column" gap="2">
-            <Image
-              rounded="lg"
-              src={gallery[0].image}
-              alt={gallery[0].title}
-              style={{ width: "100%", height: mobHeight[0] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[1].image}
-              alt={gallery[1].title}
-              style={{ width: "100%", height: mobHeight[1] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[2].image}
-              alt={gallery[2].title}
-              style={{ width: "100%", height: mobHeight[2] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[9].image}
-              alt={gallery[9].title}
-              style={{ width: "100%", height: mobHeight[9] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[6].image}
-              alt={gallery[6].title}
-              style={{ width: "100%", height: mobHeight[6] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[7].image}
-              alt={gallery[7].title}
-              style={{ width: "100%", height: mobHeight[7] }}
-            />
-          </Flex>
+          <SlideInFromLeft>
+            <Flex direction="column" gap="2">
+              <Image
+                rounded="lg"
+                src={gallery[0].image}
+                alt={gallery[0].title}
+                style={{ width: "100%", height: mobHeight[0] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[1].image}
+                alt={gallery[1].title}
+                style={{ width: "100%", height: mobHeight[1] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[2].image}
+                alt={gallery[2].title}
+                style={{ width: "100%", height: mobHeight[2] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[9].image}
+                alt={gallery[9].title}
+                style={{ width: "100%", height: mobHeight[9] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[6].image}
+                alt={gallery[6].title}
+                style={{ width: "100%", height: mobHeight[6] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[7].image}
+                alt={gallery[7].title}
+                style={{ width: "100%", height: mobHeight[7] }}
+              />
+            </Flex>
+          </SlideInFromLeft>
         </Box>
         <Box w={{ md: "50%" }}>
           <Flex direction="column" gap="2">
@@ -125,80 +135,86 @@ export default function Gallery() {
       {/* desktop view  */}
       <Flex gap="5" my="10" display={{ base: "none", md: "flex" }}>
         <Box w={{ md: "33.33%" }}>
-          <Flex direction="column" gap="5">
-            <Image
-              rounded="lg"
-              src={gallery[0].image}
-              alt={gallery[0].title}
-              style={{ width: "100%", height: heights[0] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[1].image}
-              alt={gallery[1].title}
-              style={{ width: "100%", height: heights[1] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[2].image}
-              alt={gallery[2].title}
-              style={{ width: "100%", height: heights[2] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[9].image}
-              alt={gallery[9].title}
-              style={{ width: "100%", height: heights[9] }}
-            />
-          </Flex>
+          <SlideInFromLeft>
+            <Flex direction="column" gap="5">
+              <Image
+                rounded="lg"
+                src={gallery[0].image}
+                alt={gallery[0].title}
+                style={{ width: "100%", height: heights[0] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[1].image}
+                alt={gallery[1].title}
+                style={{ width: "100%", height: heights[1] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[2].image}
+                alt={gallery[2].title}
+                style={{ width: "100%", height: heights[2] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[9].image}
+                alt={gallery[9].title}
+                style={{ width: "100%", height: heights[9] }}
+              />
+            </Flex>
+          </SlideInFromLeft>
         </Box>
         <Box w={{ md: "33.33%" }}>
-          <Flex
-            direction="column"
-            gap="
+          <Reveal delay={0.5}>
+            <Flex
+              direction="column"
+              gap="
           5"
-          >
-            <Image
-              rounded="lg"
-              src={gallery[3].image}
-              alt={gallery[3].title}
-              style={{ width: "100%", height: heights[3] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[4].image}
-              alt={gallery[4].title}
-              style={{ width: "100%", height: heights[4] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[5].image}
-              alt={gallery[5].title}
-              style={{ width: "100%", height: heights[5] }}
-            />
-          </Flex>
+            >
+              <Image
+                rounded="lg"
+                src={gallery[3].image}
+                alt={gallery[3].title}
+                style={{ width: "100%", height: heights[3] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[4].image}
+                alt={gallery[4].title}
+                style={{ width: "100%", height: heights[4] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[5].image}
+                alt={gallery[5].title}
+                style={{ width: "100%", height: heights[5] }}
+              />
+            </Flex>
+          </Reveal>
         </Box>
         <Box w={{ md: "33.33%" }}>
-          <Flex direction="column" gap="5">
-            <Image
-              rounded="lg"
-              src={gallery[6].image}
-              alt={gallery[6].title}
-              style={{ width: "100%", height: heights[6] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[7].image}
-              alt={gallery[7].title}
-              style={{ width: "100%", height: heights[7] }}
-            />
-            <Image
-              rounded="lg"
-              src={gallery[8].image}
-              alt={gallery[8].title}
-              style={{ width: "100%", height: heights[8] }}
-            />
-          </Flex>
+          <SlideInFromRight>
+            <Flex direction="column" gap="5">
+              <Image
+                rounded="lg"
+                src={gallery[6].image}
+                alt={gallery[6].title}
+                style={{ width: "100%", height: heights[6] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[7].image}
+                alt={gallery[7].title}
+                style={{ width: "100%", height: heights[7] }}
+              />
+              <Image
+                rounded="lg"
+                src={gallery[8].image}
+                alt={gallery[8].title}
+                style={{ width: "100%", height: heights[8] }}
+              />
+            </Flex>
+          </SlideInFromRight>
         </Box>
       </Flex>
     </Box>

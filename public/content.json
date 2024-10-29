@@ -418,37 +418,44 @@
         {
           "name": "Tata",
           "image": "/images/construction_items/tmt/tata.png",
-          "content": "Tata TMT Bars are known for their superior strength and corrosion resistance, suitable for various types of construction."
+          "content": "Tata TMT Bars are known for their superior strength and corrosion resistance, suitable for various types of construction.",
+          "price": 13547
         },
         {
           "name": "Sail",
           "image": "/images/construction_items/tmt/sail.png",
-          "content": "Sail TMT Bars offer excellent weldability and high tensile strength for reliable structural support."
+          "content": "Sail TMT Bars offer excellent weldability and high tensile strength for reliable structural support.",
+          "price": 13547
         },
         {
           "name": "Jindal",
           "image": "/images/construction_items/tmt/jindal.png",
-          "content": "Jindal TMT Bars are renowned for their high ductility and earthquake resistance, making them ideal for critical construction."
+          "content": "Jindal TMT Bars are renowned for their high ductility and earthquake resistance, making them ideal for critical construction.",
+          "price": 13547
         },
         {
           "name": "Rungta",
           "image": "/images/construction_items/tmt/rungta.png",
-          "content": "Rungta TMT Bars provide enhanced strength and durability, perfect for large-scale projects."
+          "content": "Rungta TMT Bars provide enhanced strength and durability, perfect for large-scale projects.",
+          "price": 13547
         },
         {
           "name": "Magadh",
           "image": "/images/construction_items/tmt/magadh.png",
-          "content": "Magadh TMT Bars are known for their cost-effectiveness and reliable performance in construction."
+          "content": "Magadh TMT Bars are known for their cost-effectiveness and reliable performance in construction.",
+          "price": 13547
         },
         {
           "name": "Kay 2",
           "image": "/images/construction_items/tmt/kay2.png",
-          "content": "K2 TMT Bars are designed for superior flexibility and high thermal stability."
+          "content": "K2 TMT Bars are designed for superior flexibility and high thermal stability.",
+          "price": 13547
         },
         {
           "name": "Vizag steel",
           "image": "/images/construction_items/tmt/vizag.png",
-          "content": "Vizag Steel TMT Bars are known for their high-quality standards and excellent resistance to environmental conditions."
+          "content": "Vizag Steel TMT Bars are known for their high-quality standards and excellent resistance to environmental conditions.",
+          "price": 15847
         }
       ]
     },
@@ -462,52 +469,62 @@
         {
           "name": "Acc plain",
           "image": "/images/construction_items/cement/acc_plain.png",
-          "content": "ACC Plain Cement is ideal for basic construction needs like plastering and masonry."
+          "content": "ACC Plain Cement is ideal for basic construction needs like plastering and masonry.",
+          "price": 7847
         },
         {
           "name": "Acc premium",
           "image": "/images/construction_items/cement/acc_premium.png",
-          "content": "ACC Premium Cement provides high strength and smooth finish, suitable for critical structures."
+          "content": "ACC Premium Cement provides high strength and smooth finish, suitable for critical structures.",
+          "price": 7847
         },
         {
           "name": "Acc gold",
           "image": "/images/construction_items/cement/acc_gold.png",
-          "content": "ACC Gold Cement is known for its superior bonding strength and durability."
+          "content": "ACC Gold Cement is known for its superior bonding strength and durability.",
+          "price": 7847
         },
         {
           "name": "Ultratech plain",
           "image": "/images/construction_items/cement/ultratech_plain.png",
-          "content": "Ultratech Plain Cement is suitable for general-purpose construction work."
+          "content": "Ultratech Plain Cement is suitable for general-purpose construction work.",
+          "price": 7847
         },
         {
           "name": "Ultratech super",
           "image": "/images/construction_items/cement/ultratech_super.png",
-          "content": "Ultratech Super Cement offers enhanced durability and strength, ideal for heavy-duty projects."
+          "content": "Ultratech Super Cement offers enhanced durability and strength, ideal for heavy-duty projects.",
+          "price": 7847
         },
         {
           "name": "Ultratech Premium",
           "image": "/images/construction_items/cement/ultratech_premium.png",
-          "content": "Ultratech Premium Cement ensures high-quality finish and long-lasting durability."
+          "content": "Ultratech Premium Cement ensures high-quality finish and long-lasting durability.",
+          "price": 7847
         },
         {
           "name": "Lafarge Concreto",
           "image": "/images/construction_items/cement/lafarge.png",
-          "content": "Lafarge Concreto Cement is designed for superior workability and high strength applications."
+          "content": "Lafarge Concreto Cement is designed for superior workability and high strength applications.",
+          "price": 7847
         },
         {
           "name": "Ambuja Cement",
           "image": "/images/construction_items/cement/ambuja.png",
-          "content": "Ambuja Cement is known for its high compressive strength and fast-setting properties."
+          "content": "Ambuja Cement is known for its high compressive strength and fast-setting properties.",
+          "price": 7847
         },
         {
           "name": "Birla Gold",
           "image": "/images/construction_items/cement/birla.png",
-          "content": "Birla Gold Cement is popular for its uniform quality and excellent bonding capacity."
+          "content": "Birla Gold Cement is popular for its uniform quality and excellent bonding capacity.",
+          "price": 7847
         },
         {
           "name": "Shree Cement",
           "image": "/images/construction_items/cement/shree.png",
-          "content": "Shree Cement offers reliable performance and is ideal for various construction needs."
+          "content": "Shree Cement offers reliable performance and is ideal for various construction needs.",
+          "price": 7847
         }
       ]
     },
@@ -521,17 +538,20 @@
         {
           "name": "Redbricks",
           "image": "/images/construction_items/bricks/red_bricks.png",
-          "content": "Redbricks provide excellent thermal insulation and are commonly used in traditional construction."
+          "content": "Redbricks provide excellent thermal insulation and are commonly used in traditional construction.",
+          "price": 7847
         },
         {
           "name": "Flyash",
           "image": "/images/construction_items/bricks/flyash.png",
-          "content": "Flyash bricks are eco-friendly and offer better strength and durability compared to conventional bricks."
+          "content": "Flyash bricks are eco-friendly and offer better strength and durability compared to conventional bricks.",
+          "price": 7847
         },
         {
           "name": "AAC block",
           "image": "/images/construction_items/bricks/acc_blocks.png",
-          "content": "AAC blocks are lightweight and provide superior insulation, making them ideal for modern buildings."
+          "content": "AAC blocks are lightweight and provide superior insulation, making them ideal for modern buildings.",
+          "price": 2847
         }
       ]
     },
@@ -545,22 +565,26 @@
         {
           "name": "Havells",
           "image": "/images/construction_items/wire/havels.png",
-          "content": "Havells wires ensure high safety standards and are suitable for residential and commercial installations."
+          "content": "Havells wires ensure high safety standards and are suitable for residential and commercial installations.",
+          "price": 2847
         },
         {
           "name": "Anchor",
           "image": "/images/construction_items/wire/anchor.png",
-          "content": "Anchor wiring is known for its durability and reliable performance in electrical systems."
+          "content": "Anchor wiring is known for its durability and reliable performance in electrical systems.",
+          "price": 2847
         },
         {
           "name": "Polycab",
           "image": "/images/construction_items/wire/polycab.png",
-          "content": "Polycab wires offer energy efficiency and are designed for heavy-duty electrical requirements."
+          "content": "Polycab wires offer energy efficiency and are designed for heavy-duty electrical requirements.",
+          "price": 2847
         },
         {
           "name": "KEI",
           "image": "/images/construction_items/wire/kei.png",
-          "content": "KEI wires provide excellent conductivity and come with high insulation properties for safety."
+          "content": "KEI wires provide excellent conductivity and come with high insulation properties for safety.",
+          "price": 2847
         }
       ]
     },
@@ -572,24 +596,16 @@
       "content": "Aggregates are used in concrete and plaster to provide bulk and improve the stability of structures.",
       "items": [
         {
-          "name": "Kodarma Gitti",
-          "image": "/images/construction_items/aggregates/gitti.png",
-          "content": "Gitti is a type of crushed stone used in concrete mixtures for strength."
-        },
-        {
-          "name": "Sand - Son Baalutt",
-          "image": "/images/construction_items/aggregates/sand.png",
-          "content": "Sand is an essential ingredient in concrete and plaster for its binding properties."
-        },
-        {
           "name": "Rmc Concreting",
           "image": "/images/construction_items/aggregates/rmc.png",
-          "content": "RMC (Ready Mix Concrete) is pre-mixed and delivered directly to the construction site."
+          "content": "RMC (Ready Mix Concrete) is pre-mixed and delivered directly to the construction site.",
+          "price": 2847
         },
         {
           "name": "Manual Concreting",
           "image": "/images/construction_items/aggregates/manual.png",
-          "content": "Manual concreting involves mixing concrete on-site using traditional methods."
+          "content": "Manual concreting involves mixing concrete on-site using traditional methods.",
+          "price": 2847
         }
       ]
     },
@@ -603,12 +619,14 @@
         {
           "name": "Cement plaster",
           "image": "/images/construction_items/plaster/cement_plaster.png",
-          "content": "Cement plaster is a mixture of cement, sand, and water used for wall plastering."
+          "content": "Cement plaster is a mixture of cement, sand, and water used for wall plastering.",
+          "price": 2847
         },
         {
           "name": "Gypsum plaster",
           "image": "/images/construction_items/plaster/gypsum.png",
-          "content": "Gypsum plaster is lightweight and offers a smooth finish, suitable for interior walls."
+          "content": "Gypsum plaster is lightweight and offers a smooth finish, suitable for interior walls.",
+          "price": 2847
         }
       ]
     },
@@ -623,19 +641,22 @@
           "name": "Ashirvad",
           "image": "/images/construction_items/pipes/ashrivad.png",
 
-          "content": "Ashirvad pipes are known for their leak-proof design and durability in plumbing systems."
+          "content": "Ashirvad pipes are known for their leak-proof design and durability in plumbing systems.",
+          "price": 2847
         },
         {
           "name": "Supreme",
           "image": "/images/construction_items/pipes/supreme.png",
 
-          "content": "Supreme pipes offer high-quality standards for various plumbing needs."
+          "content": "Supreme pipes offer high-quality standards for various plumbing needs.",
+          "price": 2847
         },
         {
           "name": "Local brand",
           "image": "/images/construction_items/pipes/local.png",
 
-          "content": "Local brand pipes are an affordable option for basic plumbing requirements."
+          "content": "Local brand pipes are an affordable option for basic plumbing requirements.",
+          "price": 2847
         }
       ]
     },
@@ -650,12 +671,14 @@
           "name": "Asian Paints",
           "image": "/images/construction_items/paint/asian_paint.png",
 
-          "content": "Asian Paints offers a range of colors and finishes for interior and exterior surfaces."
+          "content": "Asian Paints offers a range of colors and finishes for interior and exterior surfaces.",
+          "price": 2847
         },
         {
           "name": "Dulux",
           "image": "/images/construction_items/paint/dulux.png",
-          "content": "Dulux Paints are known for their vibrant colors and long-lasting durability."
+          "content": "Dulux Paints are known for their vibrant colors and long-lasting durability.",
+          "price": 2847
         }
       ]
     },
@@ -669,7 +692,8 @@
         {
           "name": "Window",
           "image": "/images/construction_items/others/window.png",
-          "content": "Aluminium Window, Powder Coated, Glazed Glass"
+          "content": "Aluminium Window, Powder Coated, Glazed Glass",
+          "price": 2847
         }
       ]
     },
@@ -683,7 +707,8 @@
         {
           "name": "Doors",
           "image": "/images/construction_items/others/door.png",
-          "content": "Main Door: Flush Door With Godrej Lock Room Door: Flush Door both Side Door Skin Toilet Door: Aluminum with ACP/Fiber"
+          "content": "Main Door: Flush Door With Godrej Lock Room Door: Flush Door both Side Door Skin Toilet Door: Aluminum with ACP/Fiber",
+          "price": 2847
         }
       ]
     }

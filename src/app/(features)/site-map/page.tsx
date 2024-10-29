@@ -51,37 +51,28 @@ export default function SiteMap() {
   ];
   return (
     <Box px="5" py="10">
-      <Text fontSize="40px" fontWeight="bold" mb="10" textAlign="center">
+      <Text
+        fontSize={{ base: "28px", md: "40px" }}
+        fontWeight="bold"
+        mb={{ base: "0", md: "10" }}
+        textAlign="center"
+      >
         Site Map
       </Text>
-      <Image src="/images/site_map.png" w="1200px" mx="auto" h="1200px" />
+      <Image
+        display={{ base: "none", md: "none", lg: "block" }}
+        src="/images/site_map.png"
+        w="1200px"
+        mx="auto"
+        h="1200px"
+      />
+      <Image
+        display={{ base: "block", md: "block", lg: "none" }}
+        src="/images/site_map_mob.png"
+        w="full"
+        mx="auto"
+        h={{ base: "1000px", md: "1500px" }}
+      />
     </Box>
   );
-  //   return (
-  //
-  //       <VStack spacing="5" align="stretch">
-  //         {steps.map((step, index) => (
-  //           <HStack key={index} align="start" spacing="4">
-  //             <Box mt="2">
-  //               <Icon
-  //                 as={step.completed ? LocationIcon : LocationIcon}
-  //                 color={step.completed ? "green.500" : "gray.400"}
-  //                 w={6}
-  //                 h={6}
-  //               />
-  //             </Box>
-  //             <VStack align="start" spacing="1" w="full">
-  //               <Text fontSize="lg" fontWeight="medium" color="secondary.600">
-  //                 {step.name}
-  //               </Text>
-  //               <Text fontSize="sm" color="gray.600">
-  //                 {step.description}
-  //               </Text>
-  //               {index < steps.length - 1 && <Divider orientation={"vertical"} />}
-  //             </VStack>
-  //           </HStack>
-  //         ))}
-  //       </VStack>
-  //     </Box>
-  //   );
 }

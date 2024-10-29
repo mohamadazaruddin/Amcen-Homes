@@ -1,13 +1,13 @@
 import mongoose from "mongoose";
-import { NextResponse } from "next/server";
 import { connectionStr } from "@/app/services/db";
-import { Comment } from "@/app/services/model/comment";
+import { NextResponse } from "next/server";
+import Faq from "@/app/services/models/faq";
 export async function GET() {
   let data = [];
   try {
     await mongoose.connect(connectionStr);
-    data = await Comment.find();
-  } catch (error) {
+    data = await Faq.find({}).sort({ createdAt: -1 });
+  } catch (error: any) {
     console.log(error);
   }
   return NextResponse.json(data);

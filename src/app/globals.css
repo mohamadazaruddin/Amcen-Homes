@@ -108,6 +108,13 @@ a {
 .swiper-slide {
   display: flex;
 }
-
-
-
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #ff4081; /* Customize your color */
+  transform-origin: 0;
+  width: 100%;
+  z-index: 1000; /* Make sure it stays above other content */
+}
